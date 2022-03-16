@@ -10,10 +10,7 @@
     width: 100%;
     padding-bottom: 20px;
     background: #3C3A39;
-     height: 94px
-   ;
-
-
+     height: 94px;
 }
 h1 {
     font-family: poppins;
@@ -23,4 +20,9 @@ h1 {
     padding-left: 15px;
     text-transform: capitalize;
 
+}
+.fa-bars {
+    font-size: 18px;
+    color: white;
+    padding-right: 20px;
 }
