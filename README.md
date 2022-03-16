@@ -12,10 +12,8 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://github.com/medsonmoombe/My-portfolio)
 
-
-## Getting Started
 
 
 
@@ -23,8 +21,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- Web browser
+- Code editor
 
+### Setup
+```bash
+git clone https://github.com/medsonmoombe/My-portfolio
+cd My-portfolio
+```
 
 
 
