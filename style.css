@@ -76,7 +76,6 @@ p {
   justify-content: center;
   margin-top: 200px;
   list-style: none;
-
 }
 
 li {
@@ -124,11 +123,11 @@ li a i:hover {
 }
 
 .row {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   margin-top: 115px;
   margin-left: 24px;
-  margin-right: 24px; 
+  margin-right: 24px;
   margin-bottom: 300px;
 }
