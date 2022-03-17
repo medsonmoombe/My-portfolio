@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  background: #3c3a39;
+  height: 94px;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.fa-bars {
+  font-size: 18px;
+  color: white;
+  padding-right: 20px;
+}
+
+.container {
+  display: flex;
+  background-image: url('images/illustration-header-mobile.png');
+  background-repeat: no-repeat;
+  background-color: #1c1a19;
+  background-position: bottom right;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 55px;
+  color: #ff6b00;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+p {
+  margin-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffff;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  margin-left: 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  list-style: none;
+}
+
+li {
+  font-size: 20px;
+  margin: 12px;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-linkedin {
+  background: #1c1a19;
+  color: white;
+}
+
+.fa-angellist {
+  background: #1a1a19;
+  color: white;
+}
+
+.fa-twitter-square {
+  background: #1c1a19;
+  color: white;
+}
+
+.fa-medium {
+  background: #1c1a19;
+  color: white;
+}
+
+.image {
+  position: relative;
+  justify-content: flex-end;
+}
+
+img {
+  position: absolute;
+  bottom: 3px;
+}
+
+li a i:hover {
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 115px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 300px;
+}
