@@ -32,6 +32,7 @@ h1 {
      align-items: center;
      align-content: center;
      height: 100vh;
+     position: relative;
      background: #1C1A19;
 }
 .row {
@@ -67,4 +68,37 @@ p {
     font-size: 16px;
     color: #FFFFFF;
     
+}
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li {
+    font-size: 20px;
+    margin: 15px;
+    
+}
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    background: #1C1A19;
+    color: white;
+}
+.fa-angellist {
+    background: #1C1A19;
+    color: white;
+}
+.fa-twitter-square {
+    background: #1C1A19;
+    color: white;
+}
+.fa-medium {
+     background: #1C1A19;
+    color: white;
 }
