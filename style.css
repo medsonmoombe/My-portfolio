@@ -28,13 +28,43 @@ h1 {
 }
 .container {
      display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     padding: 200px 24px;
-     position: absolute;
-     width: 100%;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
      height: 100vh;
-     left: 0px;
-     top: 92px;
      background: #1C1A19;
+}
+.row {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     width: 370px;
+     margin-bottom: 60px;
+     margin-right: 90px;
+     margin-left: 60px;
+}
+
+h2 {
+    font-family: 'Crete Round';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.37px;
+    color: #FF6B00;
+    text-transform: capitalize; 
+}
+h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-right: 50px;
+    font-size: 24px;
+    color: #FFF5E1;
+}
+p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    
 }
