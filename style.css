@@ -10,7 +10,7 @@
     width: 100%;
     padding-bottom: 20px;
     background: #3C3A39;
-     height: 94px;
+    height: 94px;
 }
 h1 {
     font-family: poppins;
@@ -22,9 +22,9 @@ h1 {
 
 }
 .fa-bars {
-    font-size: 18px;
-    color: white;
-    padding-right: 20px;
+     font-size: 18px;
+     color: white;
+     padding-right: 20px;
 }
 .container {
      display: flex;
@@ -39,7 +39,7 @@ h1 {
      position: relative;
 }
 .row {
-    display: flex;
+     display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
@@ -73,8 +73,8 @@ p {
     
 }
 .media-icons {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
 }
 .icons {
@@ -104,14 +104,18 @@ li {
 }
 .fa-medium {
      background: #1C1A19;
-    color: white;
+     color: white;
 }
 .image {
-  position: relative;
-  justify-content: flex-end;
+     position: relative;
+     justify-content: flex-end;
   
 }
 img {
     position: absolute;
     bottom: 3px;
+}
+li a i:hover {
+    color: #FF6B00;
+    cursor: pointer;
 }
