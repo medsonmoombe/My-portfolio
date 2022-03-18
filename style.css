@@ -131,7 +131,7 @@ li a i:hover {
   margin-right: 24px;
   margin-bottom: 300px;
 }
-
+/*  WORK SECTION  */
 .work-section {
   height: 100vh;
  
@@ -237,4 +237,29 @@ button.see-project {
 
 li {
   margin-left: 25px;
+}
+
+.my-work {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  
+
+}
+
+.sec-1 {
+  width: 333px;
+  background-image: url("images/img-1.png");
+  background-repeat: no-repeat;
+  
+  background-position: center center;
+  background-size: cover;
+}
+
+.title-1 {
+  color: white;
+}
+
+.para-1 {
+   color: white;
 }
