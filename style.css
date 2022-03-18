@@ -131,3 +131,24 @@ li a i:hover {
   margin-right: 24px;
   margin-bottom: 300px;
 }
+
+.work-section {
+  height: 100vh;
+ 
+}
+
+h5 {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight:500;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  text-transform: capitalize;
+}
+
+.intro-sec {
+  display: flex;
+  justify-content: center;
+}
+
