@@ -196,11 +196,34 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   color: #091E42;
-  text-align: center;
 }
 
 article {
   display: flex;
   justify-content: center;
-  margin-top: 400px;
+  flex-wrap: wrap;
+  margin-top: 370px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  width: auto;
+  height: 40px;
+  padding: 7px;
+  border: 1px solid lightgrey;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
 }
