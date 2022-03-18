@@ -151,6 +151,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  position: relative;
 }
 
 .separator {
@@ -163,7 +164,43 @@ h5 {
 }
 
 .image1 {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 300px;
+}
 
+img {
+  display: flex;
+  flex-direction: column;
+}
+
+h6 {
+  position: absolute;
+  margin-top: 29px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 350;
+  width: 350px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.para-sec1 {
+  position: absolute;
+  width: 330px;
+  line-height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #091E42;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
 }
