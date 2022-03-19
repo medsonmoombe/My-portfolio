@@ -33,9 +33,10 @@ h4 {
   background-image: url('images/illustration-header-mobile.png');
   background-repeat: no-repeat;
   background-color: #1c1a19;
-  background-position: bottom right;
+  background-position: 228px 364px;
   align-items: center;
   align-content: center;
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -70,19 +71,36 @@ h3 {
   align-items: flex-end;
   position: absolute;
   padding: 20px 20px;
+  padding-top: 269px;
 }
+
 
 .icons {
   display: flex;
   justify-content: center;
   margin-top: 200px;
   list-style: none;
-  position: relative;
+  gap: 20px;
+ 
 }
-
-/* li {
-  font-size: 20px;
-} */
+ul.icons li i {
+  width: 20px;
+  height: 20px;
+}
+.see-pro {
+  width: 154px;
+  border: 1px solid;
+  background-color: #FF6B00;
+  color: #fff;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -13px;
+  height: 56px;
+  margin-left: 12px;
+  font-size: 17px;
+}
 
 .fa-github {
   color: white;
@@ -124,13 +142,13 @@ li a i:hover {
 }
 
 .row {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 115px;
-  margin-bottom: 300px;
-  padding: 20px 20px;
+     display: flex;
+     padding-top: 100px;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 115px;
+     margin-bottom: 137px;
+     padding: 20px 20px;
 }
 /*  WORK SECTION  */
 
@@ -223,9 +241,6 @@ line-height: 52px;
   list-style: none;
 }
 
-/* li {
-  padding: 3px;
-} */
 
 
 .card-section1 {
@@ -291,6 +306,7 @@ ul.skill-list {
   padding-left: 24px;
   padding-top: 81px;
   font-size: 32px;
+  font-family: 'Crete Round' sans-serif;
 }
 .list-item {
   border: 1px solid;
