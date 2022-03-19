@@ -341,6 +341,13 @@ ul.skill-list {
 }
 
 .about-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/abt-img.png');
+  background-repeat: no-repeat;
+  background-color: #1c1a19;
+  background-position: 228px 364px;
   background-color:  #1c1a19;
 }
 
@@ -363,7 +370,8 @@ ul.skill-list {
   height: 56px;
   margin-left: 12px;
   font-size: 17px;
-
+  margin-top: 43px;
+  margin-left: 24px;
 }
 
 .paragraph {
@@ -374,18 +382,25 @@ ul.skill-list {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-}
+  margin-top: 62px;}
 
 .about-header {
   width: 327px;
-height: 79px;
-left: 24px;
-top: 120px;
-
-font-family: 'Crete Round',sans-serif;
-font-weight: 400;
-font-size: 72px;
-line-height: 88px;
-letter-spacing: 0.37px;
-color: #FF6B00;
+  height: 79px;
+  font-family: 'Crete Round',sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+  width: 327px;
+  height: 79px;
+  font-family: 'Crete Round',sans-serif;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+  padding: 24px 24px;
+  padding-top: 120px;
 }
