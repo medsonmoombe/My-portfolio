@@ -68,7 +68,6 @@ p {
   justify-content: center;
   align-items: flex-end;
   position: absolute;
-  margin-left: 24px;
 }
 
 .icons {
@@ -80,7 +79,6 @@ p {
 
 li {
   font-size: 20px;
-  margin: 12px;
 }
 
 .fa-github {
@@ -127,8 +125,6 @@ li a i:hover {
   justify-content: center;
   flex-direction: column;
   margin-top: 115px;
-  margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 300px;
 }
 /*  WORK SECTION  */
@@ -138,7 +134,7 @@ li a i:hover {
   grid-template-columns: auto;
   justify-content: center;
   align-content: center;
-
+  padding: 20px 20px;
 }
 
 .title1 {
@@ -156,24 +152,26 @@ line-height: 52px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
+}
+
+.card-container {
+
+  margin-top: 120px;
+  border: 1px solid #333;
 }
 
 .intro-img {
-  display: flex;
-  justify-content: center;
-  background-image: url("images/Placeholder1.png");
- background-repeat: no-repeat;
- background-attachment:local;
- background-position: center;
- position: relative;
+  position: relative;
  height: 250px;
+ width: inherit;
 }
 
+.card-title {
+  color: #000;
+}
 h6 {
   position: absolute;
-  margin-top: 280px;
+  margin-top: 250px;
   width: 327px;
   height: 36px;
   left: 0px;
@@ -195,9 +193,7 @@ h6 {
   position: static;
   width: 327px;
   height: 147px;
-  margin-top: 30px;
-  left: 0px;
-  top: 48px;
+  margin-top: 65px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -208,8 +204,7 @@ h6 {
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex                                                                      ;
   justify-content: center;
   align-content: center;
 }
@@ -218,19 +213,23 @@ h6 {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 10px;
+}
 
+li {
+  padding: 3px;
 }
 
 .see-project {
  position: absolute;
  margin-top: 20px;
- margin-right: 300px;
 }
 
 button.see-project {
+  display: flex;
+  justify-content: flex-start;
   background: #ff6b00;
   width: 100px;
+
 }
 
 button {
@@ -239,6 +238,58 @@ button {
 
 }
 
-.title-sec {
+.title-sec { 
+position: static;
+width: 295px;
+height: 81px;
+left: 16px;
+top: 8px;
 
+font-family: 'Crete Round';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 44px;
+}
+
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.para-1 {
+  position: absolute;
+  width: 295px;
+  height: 87px;
+  left: 16px;
+  top: 101px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #FFFFFF
+}
+
+.header-1 {
+  width: 295px;
+  height: 81px;
+  left: 16px;
+  top: 8px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.card-section {
+  display: grid;
+  justify-content: center;
 }
