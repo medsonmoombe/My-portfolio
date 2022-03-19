@@ -56,6 +56,7 @@ h3 {
 }
 
 p {
+  position: relative;
   margin-top: 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -68,6 +69,7 @@ p {
   justify-content: center;
   align-items: flex-end;
   position: absolute;
+  padding: 20px 20px;
 }
 
 .icons {
@@ -75,6 +77,7 @@ p {
   justify-content: center;
   margin-top: 200px;
   list-style: none;
+  position: relative;
 }
 
 li {
@@ -121,11 +124,13 @@ li a i:hover {
 }
 
 .row {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 115px;
   margin-bottom: 300px;
+  padding: 20px 20px;
 }
 /*  WORK SECTION  */
 
@@ -134,7 +139,7 @@ li a i:hover {
   grid-template-columns: auto;
   justify-content: center;
   align-content: center;
-  padding: 20px 20px;
+  padding: 24px 24px;
 }
 
 .title1 {
@@ -155,32 +160,31 @@ line-height: 52px;
 }
 
 .card-container {
-
+  position: relative;
   margin-top: 120px;
   border: 1px solid #333;
 }
 
 .intro-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
- height: 250px;
- width: inherit;
+  height: 250px;
+  width: 320px;
 }
 
+
+
 .card-title {
-  color: #000;
-}
-h6 {
   position: absolute;
-  margin-top: 250px;
-  width: 327px;
-  height: 36px;
-  left: 0px;
-  top: 0px;
+  margin-top: 7px;
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+  padding: 20px 20px;
 
 }
 
@@ -191,7 +195,7 @@ h6 {
 
 .para-sec1 { 
   position: static;
-  width: 327px;
+  width: 320px;
   height: 147px;
   margin-top: 65px;
   font-family: 'Inter';
@@ -222,6 +226,7 @@ li {
 .see-project {
  position: absolute;
  margin-top: 20px;
+ padding: 10px 10px;
 }
 
 button.see-project {
@@ -287,9 +292,26 @@ color: #FFFFFF
   font-size: 32px;
   line-height: 44px;
   color: #FFFFFF;
+  position: relative;
 }
 
 .card-section {
   display: grid;
   justify-content: center;
+  align-content: center;
+  padding: 20px 20px;
+  margin-top: 100px;
+  position: relative;
+  border:  2px solid #1a1a19;
+}
+
+.card-1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: absolute;
 }
