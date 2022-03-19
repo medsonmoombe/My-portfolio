@@ -36,7 +36,6 @@ h4 {
   background-position: bottom right;
   align-items: center;
   align-content: center;
-  position: relative;
 }
 
 h1 {
@@ -81,9 +80,9 @@ h3 {
   position: relative;
 }
 
-li {
+/* li {
   font-size: 20px;
-}
+} */
 
 .fa-github {
   color: white;
@@ -139,8 +138,9 @@ li a i:hover {
   display: grid;
   grid-template-columns: min-content;
   justify-content: center;
-  gap: 80px;
-  padding: 24px 24px;
+  gap: 12px;
+  padding-top: 80px;
+
 }
 
 .title1 {
@@ -157,13 +157,13 @@ line-height: 52px;
 .separator {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 24px;
+  padding-bottom: 35px;
+  margin-bottom: 81px;
 }
 
 .card-container {
   position: relative;
   margin: 0 auto;
-  border: 1px solid #333;
   padding: 20px 20px;
   overflow-y: hidden;
   margin-left: -9px;
@@ -223,9 +223,9 @@ line-height: 52px;
   list-style: none;
 }
 
-li {
+/* li {
   padding: 3px;
-}
+} */
 
 
 .card-section1 {
@@ -234,12 +234,47 @@ li {
   width: 327px;
   margin: 12px;
 }
+
+li.list-item-1 {
+  border: 1px solid;
+  background-color: #fff;
+  width: 56px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091E42;
+  line-height: 20px;
+}
+
+li.list-items-1 {
+  border: 1px solid;
+  background-color: #fff;
+  width: 94px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091E42;
+  line-height: 20px;
+}
+
 ul.tech-list {
   display: inline-flex;
-  list-style: none;
+  list-style: none; 
   gap: 20px;
   padding-left: 24px;
 }
+
+ul.skill-list {
+  display: inline-flex;
+  list-style: none;
+  padding-top: 16px;
+  gap: 20px;
+}
+
 
 .btn {
   width: 327px;
