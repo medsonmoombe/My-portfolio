@@ -174,7 +174,6 @@ line-height: 52px;
 h6 {
   position: absolute;
   margin-top: 280px;
-  position: static;
   width: 327px;
   height: 36px;
   left: 0px;
@@ -184,5 +183,62 @@ h6 {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+
+}
+
+.para-discrp1 {
+  display: grid;
+  align-items: center;
+}
+
+.para-sec1 { 
+  position: static;
+  width: 327px;
+  height: 147px;
+  margin-top: 30px;
+  left: 0px;
+  top: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091E42;
+  position: relative;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+
+}
+
+.see-project {
+ position: absolute;
+ margin-top: 20px;
+ margin-right: 300px;
+}
+
+button.see-project {
+  background: #ff6b00;
+  width: 100px;
+}
+
+button {
+  padding: 10px;
+  background: white;
+
+}
+
+.title-sec {
 
 }
