@@ -160,13 +160,13 @@ li a i:hover {
 }
 
 .title1 {
-display: flex;
-justify-content: center;
-font-family: 'Crete Round';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 52px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Crete Round',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .separator {
@@ -219,7 +219,7 @@ line-height: 52px;
   line-height: 24px;
   padding-top: 12px;
   padding-left: 24p;
-  color: #091E42;
+  color: #091e42;
 }
 
 .buttons {
@@ -252,7 +252,7 @@ li.list-item-1 {
   font-weight: 500;
   font-size: 15px;
   padding: 12px;
-  color: #091E42;
+  color: #091e42;
   line-height: 20px;
 }
 
@@ -265,7 +265,7 @@ li.list-items-1 {
   font-weight: 500;
   font-size: 15px;
   padding: 12px;
-  color: #091E42;
+  color: #091e42;
   line-height: 20px;
 }
 
@@ -375,7 +375,7 @@ ul.skill-list {
   margin-left: 28px;
   left: 0px;
   padding-left: 12px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   margin-bottom: 113px;
 }
  
@@ -395,10 +395,10 @@ ul li {
 
 .about-l {
  height: 79px;
- font-family: 'Crete Round';
+ font-family: 'Crete Round',sans-serif;
  font-weight: 400;
  font-size: 62px;
- color: #FF6B00;
+ color: #ff6b00;
 }
 
 .prgs {
@@ -409,7 +409,7 @@ ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   padding-left: 12px;
   padding-top: 24px;
   padding-right: 12px;
@@ -428,7 +428,7 @@ ul li {
   align-items: center;
   padding: 22px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #ff6b00;
   flex: none;
   margin-left: 12px;
