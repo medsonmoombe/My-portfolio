@@ -198,21 +198,20 @@ line-height: 52px;
 }
 
 .para-sec1 { 
-  position: static;
-  width: 320px;
+  width: 308px;
   height: 147px;
   margin-top: 65px;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-top: 12px;
+  padding-left: 24p;
   color: #091E42;
-  position: relative;
 }
 
 .buttons {
-  display: flex                                                                      ;
+  display: flex;
   justify-content: center;
   align-content: center;
   margin-right: 20px;
