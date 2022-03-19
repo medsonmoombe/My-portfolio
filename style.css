@@ -57,7 +57,8 @@ h3 {
 
 p {
   position: relative;
-  margin-top: 12px;
+  margin-top: 18px;
+  margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -136,7 +137,7 @@ li a i:hover {
 
 .work-section {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
   padding: 24px 24px;
@@ -161,8 +162,11 @@ line-height: 52px;
 
 .card-container {
   position: relative;
-  margin-top: 120px;
+  margin: 0 auto;
   border: 1px solid #333;
+  padding: 20px 20px;
+  overflow-y: hidden;
+  margin-left: -9px;
 }
 
 .intro-img {
@@ -211,6 +215,7 @@ line-height: 52px;
   display: flex                                                                      ;
   justify-content: center;
   align-content: center;
+  margin-right: 20px;
 }
 
 .skills {
@@ -224,17 +229,22 @@ li {
 }
 
 .see-project {
- position: absolute;
- margin-top: 20px;
+position: relative;
+ display: flex;
+ justify-content: flex-start;
+ margin-top: 5px;
  padding: 10px 10px;
+}
+
+.see-project1 {
+  margin-left: 2px;
 }
 
 button.see-project {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   background: #ff6b00;
   width: 100px;
-
 }
 
 button {
@@ -285,33 +295,62 @@ color: #FFFFFF
   width: 295px;
   height: 81px;
   left: 16px;
-  top: 8px;
+  margin-top: 65px;
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
-  position: relative;
-}
-
-.card-section {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  padding: 20px 20px;
-  margin-top: 100px;
-  position: relative;
-  border:  2px solid #1a1a19;
-}
-
-.card-1 {
+  color: white;
   position: absolute;
-  display: flex;
-  justify-content: center;
+}
+
+.card-section1 {
+  background-image: url('images/img-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
   align-items: center;
+  height: 370px;
+  position: relative;
+  
+  padding: 12px 12px;
 }
 
-.card {
-  position: absolute;
+.all-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 360px;
+}
+
+.project {
+  width: 327px;
+  background: #ff6b00;
+}
+
+.skill-set {
+  display: flex;
+  margin: 5px;
+  padding: 3px;
+  list-style: none;
+ 
+}
+
+button {
+  background:  rgba(255, 255, 255, 0.24);
+}
+
+.content-1 {
+  margin-right: 12px;
+  margin-left: 12px;
+margin-top: 150px;
+width: 295px;
+height: 87px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #ffff;
+padding: 5px;
 }
