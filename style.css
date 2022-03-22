@@ -15,7 +15,7 @@
 }
 
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: white;
@@ -31,7 +31,7 @@ h4 {
 
 .container {
   display: flex;
-  background-image: url('images/illustration-header-mobile.png');
+  background-image: url("images/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-color: #1c1a19;
   background-position: bottom right;
@@ -41,15 +41,15 @@ h4 {
 }
 
 h1 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 55px;
   color: #ff6b00;
   text-transform: capitalize;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
+h2 {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -58,7 +58,7 @@ h3 {
 
 p {
   margin-top: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #ffff;
@@ -114,7 +114,6 @@ li {
 }
 
 img {
-  position: absolute;
   bottom: 3px;
 }
 
@@ -136,15 +135,15 @@ li a i:hover {
 .work-section {
   display: grid;
   grid-template-columns: min-content;
-  justify-content: center;
-  gap: 12px;
   padding-top: 80px;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 
-.title1 {
+h3.title1 {
   display: flex;
   justify-content: center;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -175,16 +174,27 @@ li a i:hover {
   width: 320px;
 }
 
+h6.card-title {
+  position: absolute;
+  margin-top: 7px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 20px 2px;
+}
+
 .para-discrp1 {
   display: grid;
   align-items: center;
 }
 
 .para-sec1 {
-  width: 308px;
+  width: inherit;
   height: 147px;
   margin-top: 65px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -192,11 +202,19 @@ li a i:hover {
   color: #091e42;
 }
 
-.skill-list {
+ul.skill-list {
   display: inline-flex;
   list-style: none;
   padding-top: 16px;
-  gap: 8px;
+  gap: 4px;
+  margin: -20px -12px;
+}
+
+.btn-skill {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, 59px);
+  gap: 2px;
 }
 
 .list-items-1 {
@@ -204,7 +222,7 @@ li a i:hover {
   background-color: #fff;
   width: 94px;
   height: 43px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 12px;
@@ -217,18 +235,19 @@ li a i:hover {
   background-color: #fff;
   width: 56px;
   height: 43px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 12px;
   color: #091e42;
   line-height: 20px;
+  margin-right: -10px;
 }
 
 .see-pro {
   width: 113px;
-  height: 59px;
-  font-family: 'Inter',sans-serif;
+  height: 48px;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -236,30 +255,32 @@ li a i:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background-color: #ff6b00;
-  margin-top: -19px;
+  margin: -19px 10px;
+  padding: 5px;
+  border: none;
 }
 
 .card-section1 {
   background-image: url(./images/img-1.png);
   height: 368px;
   width: 327px;
-  margin-top: 50px;
+  margin: 50px 12px;
 }
 
 .Profesional {
-  width: 292px;
+  width: inherit;
   color: #fff;
   padding-left: 24px;
   padding-top: 81px;
   font-size: 32px;
-  font-family: 'Crete Round' sans-serif;
+  font-family: "Crete Round", sans-serif;
 }
 
 .prg {
   width: 327px;
-  font-family: 'poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -271,7 +292,6 @@ li a i:hover {
 .tech-list {
   display: inline-flex;
   list-style: none;
-  gap: 20px;
   padding-left: 24px;
 }
 
@@ -280,19 +300,34 @@ li a i:hover {
   background-color: #ff6b00;
   color: #fff;
   height: 49px;
-  padding-top: 93px;
-  margin-top: 30px;
+  padding: 12px;
+  margin-top: 23px;
 }
 
 .list-item {
   border: 1px solid;
-  background-color: #fff;
- font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 56px;
+  height: 43px;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 12px;
-  color: #091e42;
   line-height: 20px;
+  color: #fff;
+}
+
+.list-items {
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.24);
+  width: 108px;
+  height: 43px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  line-height: 20px;
+  color: #fff;
 }
 
 .about-section {
@@ -308,24 +343,24 @@ li a i:hover {
   padding-left: 24px;
   background-image: url(./images/abt-img.png);
   background-repeat: no-repeat;
-  background-position: 193px 264px;
+  background-position: 233px 276px;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .about-l {
   height: 79px;
-  font-family: 'Crete Round',sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 62px;
   color: #ff6b00;
 }
 
 .prgs {
-  width: 327px;
+  width: inherit;
   height: 148px;
   left: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -338,9 +373,8 @@ li a i:hover {
 .see-proj {
   width: 183px;
   height: 24px;
-  left: 12px;
   top: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -348,7 +382,7 @@ li a i:hover {
   align-items: center;
   padding: 22px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background-color: #ff6b00;
   flex: none;
   margin-left: 12px;
@@ -358,12 +392,9 @@ li a i:hover {
 .hr {
   width: 298px;
   margin-top: -45px;
-  border-radius: 0px;
-  height: 0px;
   margin-left: 28px;
-  left: 0px;
   padding-left: 12px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   margin-bottom: 113px;
 }
 
@@ -379,22 +410,22 @@ li.main {
   padding-left: 0;
 }
 
+ul li {
+  list-style: none;
+}
+
 .about-section ul li {
   margin-bottom: 32px;
   font-size: 22px;
   padding-left: 38px;
 }
 
-.about-section .main {
-  font-size: 32px;
-  padding-left: 0;
-}
-
 ul li .main {
   font-size: 32px;
   padding-left: 0;
 }
- 
-ul li {
-  list-style: none;
+
+.about-section .main {
+  font-size: 32px;
+  padding-left: 0;
 }
