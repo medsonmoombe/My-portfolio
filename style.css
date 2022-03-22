@@ -309,3 +309,63 @@ li a i:hover {
   color: #091e42;
   line-height: 20px;
 }
+
+.about-section {
+  background-color: #1c1a19;
+  color: #fff;
+}
+
+.container-2 {
+  display: flex;
+  background-color: #1c1a19;
+  margin-top: 120px;
+  height: 600px;
+  padding-left: 24px;
+  background-image: url(./images/abt-img.png);
+  background-repeat: no-repeat;
+  background-position: 193px 264px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-l {
+  height: 79px;
+  font-family: 'Crete Round',sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  color: #ff6b00;
+}
+
+.prgs {
+  width: 327px;
+  height: 148px;
+  left: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding-left: 12px;
+  padding-top: 24px;
+  padding-right: 12px;
+}
+
+.see-proj {
+  width: 183px;
+  height: 24px;
+  left: 12px;
+  top: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #ff6b00;
+  flex: none;
+  margin-left: 12px;
+  margin-top: 37px;
+}
