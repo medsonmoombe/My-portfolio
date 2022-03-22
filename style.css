@@ -173,3 +173,53 @@ li a i:hover {
   height: 250px;
   width: 320px;
 }
+
+.para-discrp1 {
+  display: grid;
+  align-items: center;
+}
+
+.para-sec1 {
+  width: 308px;
+  height: 147px;
+  margin-top: 65px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+  color: #091e42;
+}
+
+.skill-list {
+  display: inline-flex;
+  list-style: none;
+  padding-top: 16px;
+  gap: 20px;
+}
+
+.list-items-1 {
+  border: 1px solid;
+  background-color: #fff;
+  width: 94px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091e42;
+  line-height: 20px;
+}
+
+.list-item-1 {
+  border: 1px solid;
+  background-color: #fff;
+  width: 56px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091e42;
+  line-height: 20px;
+}
