@@ -233,7 +233,7 @@ ul.skill-list {
 .list-item-1 {
   border: 1px solid;
   background-color: #fff;
-  width: 56px;
+  width: inherit;
   height: 43px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -428,4 +428,19 @@ ul li .main {
 .about-section .main {
   font-size: 32px;
   padding-left: 0;
+}
+
+.Language {
+  position: absolute;
+  margin: -38px 32px;
+}
+
+.framework {
+  position: absolute;
+  margin: -33px 32px;
+}
+
+.skils {
+  position: absolute;
+  margin: -33px 32px;
 }
