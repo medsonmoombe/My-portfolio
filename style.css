@@ -239,3 +239,73 @@ li a i:hover {
   background-color: #ff6b00;
   margin-top: -19px;
 }
+
+.card-section1 {
+  background-image: url(./images/img-1.png);
+  height: 386px;
+  width: 327px;
+  margin: 12px;
+  margin-top: 50px;
+}
+
+.Profesional {
+  width: 292px;
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 81px;
+  font-size: 32px;
+  font-family: 'Crete Round' sans-serif;
+}
+
+.prg {
+  width: 327px;
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  font-weight: 400;
+}
+
+.tech-list {
+  display: inline-flex;
+  list-style: none;
+  gap: 20px;
+  padding-left: 24px;
+}
+
+.btn {
+  width: 327px;
+  background-color: #ff6b00;
+  color: #fff;
+  height: 49px;
+  padding-top: 93px;
+  margin-top: 30px;
+}
+
+.list-item {
+  border: 1px solid;
+  background-color: #fff;
+  width: 56px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091e42;
+  line-height: 20px;
+}
+
+.list-items {
+  border: 1px solid;
+  background-color: #fff;
+  width: 94px;
+  height: 43px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px;
+  color: #091e42;
+  line-height: 20px;
+}
