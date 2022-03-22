@@ -131,3 +131,45 @@ li a i:hover {
   margin-right: 24px;
   margin-bottom: 300px;
 }
+
+.work-section {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 80px;
+}
+
+.title1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.separator {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 35px;
+  margin-bottom: 81px;
+}
+
+.card-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px;
+  overflow-y: hidden;
+  margin-left: -9px;
+}
+
+.intro-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 250px;
+  width: 320px;
+}
