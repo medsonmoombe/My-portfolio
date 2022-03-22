@@ -223,3 +223,19 @@ li a i:hover {
   color: #091e42;
   line-height: 20px;
 }
+
+.see-pro {
+  width: 113px;
+  height: 59px;
+  font-family: 'Inter',sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #ff6b00;
+  margin-top: -19px;
+}
