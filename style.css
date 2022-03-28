@@ -210,22 +210,22 @@ ul.skill-list {
   margin: -20px -12px;
 }
 
-.btn-skill {
+/* .btn-skill {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(1, 59px);
   gap: 2px;
-}
+} */
 
 .list-items-1 {
   border: 1px solid;
   background-color: #fff;
   width: 94px;
-  height: 43px;
+  /* height: 43px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  padding: 12px;
+  padding: 12px; */
   color: #091e42;
   line-height: 20px;
 }
