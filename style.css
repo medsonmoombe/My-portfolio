@@ -208,6 +208,7 @@ ul.skill-list {
   padding-top: 16px;
   gap: 4px;
   margin: -20px -12px;
+  
 }
 
 /* .btn-skill {
@@ -450,3 +451,9 @@ ul li .main {
   position: absolute;
   margin: -33px 32px;
 }
+
+.float {
+  float: right;
+}
+
+
