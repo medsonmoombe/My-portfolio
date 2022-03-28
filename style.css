@@ -217,10 +217,15 @@ ul.skill-list {
   gap: 2px;
 } */
 
+/* .btn-still {
+ 
+} */
+
 .list-items-1 {
   border: 1px solid;
   background-color: #fff;
   width: 94px;
+  float:right;
   /* height: 43px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -238,6 +243,7 @@ ul.skill-list {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  float:right;
   padding: 12px;
   color: #091e42;
   line-height: 20px;
