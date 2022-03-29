@@ -943,4 +943,88 @@ button.first-card {
     width: 268px;
   }
 
+  .about-section {
+    display: grid;
+
+  }
+
+  .container-2 {
+    display: flex;
+     background-color: #1c1a19;
+      margin-top: 120px;
+      height: 59%;
+      padding-left: 24px;
+      background-image: url(./image/illustration-about\ me@2x.png);
+      background-repeat: no-repeat;
+      background-size: 515px;
+      background-position: right bottom;
+    width: 100%;
+    
 }
+
+.about-l {
+  width: 566px;
+  font-family: 'Crete Round',sans-serif;
+  font-weight: 400;
+  font-size: 99px;
+  line-height: 82px;
+  padding-left: 40px;
+}
+
+.prgs {
+  width: 566px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  padding-top: 60px;
+  margin: 32px 36px;
+}
+
+.see-proj {
+  margin: 129px 45px;
+}
+
+.hr {
+  margin: 122px auto;
+  width: 80%;
+  margin-top: -2px;
+}
+
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-display {
+  display: flex;
+  gap: 150px;
+}
+
+.lang-skill {
+  display: flex;
+  flex-direction: column;
+}
+
+li.main {
+  width: 228px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+   font-size: 32px;
+  line-height: 44px;
+}
+
+li.li {
+      height: 62px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 43px;
+      display: flex;
+      align-items: center;
+}
+
+}
+
