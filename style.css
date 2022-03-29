@@ -564,3 +564,92 @@ button {
   margin-bottom: 12px;
   margin-left: 2px;
 }
+
+/* Desktop version starts here! */
+
+@media screen and (min-width: 768px) {
+  .humber {
+    display: none;
+  }
+
+  h4.logo {
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+
+  .menu-bars {
+    display: inline-block;
+    flex-direction: row;
+  }
+
+  .menu-bars {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    margin-right: 90px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+  }
+
+  ul.menu-bars li a {
+    text-decoration: none;
+  }
+
+  a {
+    color: #fff;
+
+  }
+  /* i.fa-envelope {
+    color: #1C1A19;
+  } */
+
+  .container {
+    background-image: url(./image/header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 870px;
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 647px;
+  }
+
+  ul.social-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: -143px;
+    margin-right: 125px;
+  }
+
+  .prg1 {
+    width: 512px;
+    height: 123px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: -49px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .h1 {
+    width: 426px;
+    height: 124px;
+    padding-top: 253px;
+    padding-left: 143px;
+  }
+
+  h2 {
+    width: 421px;
+    height: 27px;
+    margin-top: 203px;
+    padding-left: 143px;
+    
+  }
+}
