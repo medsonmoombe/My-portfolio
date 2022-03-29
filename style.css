@@ -226,7 +226,7 @@ h2 {
 }
 
 .card-1 {
-  background-image: url(./image/img-1.png);
+  background-image: url(./images/img-1.png);
   background-repeat: no-repeat;
   margin: 24px;
   height: 386px;
@@ -337,7 +337,7 @@ color: #fff;
   margin-top: 120px;
   height: 600px;
   padding-left: 24px;
-  background-image: url(./image/abt-img.png);
+  background-image: url(./images/abt-img.png);
   background-repeat: no-repeat;
   background-position: 233px 276px;
   flex-direction: column;
