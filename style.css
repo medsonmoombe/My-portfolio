@@ -568,10 +568,11 @@ button {
 /* Desktop version starts here! */
 
 @media screen and (min-width: 768px) {
+ 
   .humber {
     display: none;
   }
-
+  
   h4.logo {
     margin-top: 20px;
     margin-left: 90px;
@@ -587,7 +588,7 @@ button {
     gap: 12px;
     margin-top: 20px;
     margin-right: 90px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
   }
 
@@ -599,12 +600,10 @@ button {
     color: #fff;
 
   }
-  /* i.fa-envelope {
-    color: #1C1A19;
-  } */
+ 
 
   .container {
-    background-image: url(./image/header-desktop.png);
+    background-image: url(./images/header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
@@ -650,7 +649,6 @@ button {
     height: 27px;
     margin-top: 203px;
     padding-left: 143px;
-    
   }
 
   .work {
@@ -700,12 +698,12 @@ button {
   }
 
   .multi {
-        height: -4px;
-        font-family: "Crete Round", sans-serif;
-        font-size: 34px;
-        color: rgb(9, 30, 66);
-        margin-top: -36px;
-        padding-left: 0px;
+    height: -4px;
+    font-family: "Crete Round", sans-serif;
+    font-size: 34px;
+    color: rgb(9, 30, 66);
+    margin-top: -36px;
+    padding-left: 0px;
   }
 
   .prg {
@@ -713,14 +711,14 @@ button {
     font-family: 'Inter',sans-serif;
     font-size: 14px;
     line-height: 23px;
-    color: #091E42;
+    color: #091e42;
     padding-top: -16px;
     margin-left: -28px;
   }
 
   ul.tech-list {
     margin-left: 8px;
-    background: #FFFFFF;
+    background: #fff;
     margin-top: -15px;
     gap: 6px;
   }
@@ -755,14 +753,14 @@ button {
   }
 
   .desktop-card1 {
-    display: flex;
-    background-image: url(/image/desk-1.png);
-    background-repeat: no-repeat;
-    background-size: 346px;
-    width: 296px;
-    height: 414px;
-    border: 1px solid black;
-    margin-left: -8px;
+   display: flex;
+   background-image: url(/images/desk-1.png);
+   background-repeat: no-repeat;
+   background-size: 346px;
+   width: 296px;
+   height: 414px;
+   border: 1px solid black;
+   margin-left: -8px;
   }
 
 button.first-card {
@@ -779,7 +777,7 @@ button.first-card {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 179px 12px;
 }
 
@@ -790,24 +788,24 @@ button.first-card {
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 276px -326px;
-  padding: 0px;
+  padding: 0;
 }
   
 
-  .desktop-card2 {
-    display: flex;
-    background-image: url(/image/desk-3.png);
-    background-repeat: no-repeat;
-    background-size: 347px;
-    width: 297px;
-    height: 414px;
-    margin-left: 16px;
+.desktop-card2 {
+  display: flex;
+  background-image: url(/images/desk-3.png);
+  background-repeat: no-repeat;
+  background-size: 347px;
+  width: 297px;
+  height: 414px;
+  margin-left: 16px;
 }
  .desktop-card3 {
   display: flex;
-  background-image: url(/image/desk-4.png);
+  background-image: url(/images/desk-4.png);
   background-repeat: no-repeat;
   background-size: 347px;
   width: 297px;
@@ -821,7 +819,7 @@ button.first-card {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 212px 12px;
 }
 
@@ -832,20 +830,20 @@ button.first-card {
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 276px -326px;
-  padding: 0px;
+  padding: 0;
 }
  
 
-  .desktop-card4 {
-    display: flex;
-    background-image: url(/image/img-1.png);
-    background-repeat: no-repeat;
-    background-size: 347px;
-    width: 297px;
-    height: 414px;
-    margin-left: -8px;
+.desktop-card4 {
+  display: flex;
+  background-image: url(/images/img-1.png);
+  background-repeat: no-repeat;
+  background-size: 347px;
+  width: 297px;
+  height: 414px;
+  margin-left: -8px;
   }
 
   .Profesional-fourth {
@@ -854,7 +852,7 @@ button.first-card {
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #fff;
     margin: 179px 12px;
   }
 
@@ -865,14 +863,14 @@ button.first-card {
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #fff;
     margin: 276px -326px;
-    padding: 0px;
+    padding: 0;
   }
 
   .desktop-card5 {
     display: flex;
-    background-image: url(/image/desk-3.png);
+    background-image: url(/images/desk-3.png);
     background-repeat: no-repeat;
     background-size: 347px;
     width: 297px;
@@ -886,7 +884,7 @@ button.first-card {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 179px 12px;
 }
 
@@ -897,68 +895,67 @@ button.first-card {
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 276px -326px;
-  padding: 0px;
+  padding: 0;
 }
   
-
-  .desktop-card6 {
-    display: flex;
-    background-image: url(/image/desk-4.png);
-    background-repeat: no-repeat;
-    background-size: 347px;
-    width: 297px;
-    height: 414px;
-    margin-left: 15px;
+.desktop-card6 {
+  display: flex;
+  background-image: url(/images/desk-4.png);
+  background-repeat: no-repeat;
+  background-size: 347px;
+  width: 297px;
+  height: 414px;
+  margin-left: 15px;
   }
 
-  .Profesional-sixth {
-    width: 318px;
-    font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: #FFFFFF;
-    margin: 212px 12px;
+.Profesional-sixth {
+  width: 318px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #fff;
+  margin: 212px 12px;
+}
+
+.card-prg-6 {
+  width: 274px;
+  height: 64px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #fff;
+  margin: 276px -326px;
+  padding: 0;
   }
 
-  .card-prg-6 {
-    width: 274px;
-    height: 64px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 21px;
-    color: #FFFFFF;
-    margin: 276px -326px;
-    padding: 0px;
-  }
+.card-1 {
+  display: none;
+}
 
-  .card-1 {
-    display: none;
-  }
+.btn-2 {
+  width: 268px;
+}
 
-  .btn-2 {
-    width: 268px;
-  }
+.about-section {
+  display: grid;
 
-  .about-section {
-    display: grid;
+}
 
-  }
-
-  .container-2 {
-    display: flex;
-     background-color: #1c1a19;
-      margin-top: 120px;
-      height: 59%;
-      padding-left: 24px;
-      background-image: url(./image/illustration-about\ me@2x.png);
-      background-repeat: no-repeat;
-      background-size: 515px;
-      background-position: right bottom;
-    width: 100%;
+.container-2 {
+  display: flex;
+  background-color: #1c1a19;
+  margin-top: 120px;
+  height: 59%;
+  padding-left: 24px;
+  background-image: url(./images/illustration-about\ me@2x.png);
+  background-repeat: no-repeat;
+  background-size: 515px;
+  background-position: right bottom;
+  width: 100%;
     
 }
 
@@ -1012,19 +1009,102 @@ li.main {
   height: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-   font-size: 32px;
+  font-size: 32px;
   line-height: 44px;
 }
 
 li.li {
-      height: 62px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 43px;
-      display: flex;
-      align-items: center;
+   height: 62px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 43px;
+   display: flex;
+  align-items: center;
+}
+
+.form-section {
+  margin: auto;
+}
+
+ .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: inherit;
+  text-align: center;
+  margin-top: -279px;
+  margin-left: 184px;
+} 
+
+article {
+  width: 488px;
+  height: 261px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #262626;
+  margin-top: 86px;
+  margin-left: -726px;
+}
+
+.footer {
+  width: 300px;
+  height: inherit;
+}
+/* .content {
+  position: absolute;
+  width: 31%;
+  text-align: center;
+  height: inherit;
+  margin-left: 268px;
+  gap: 2px;
+  margin-top: -93px;
+} */
+.full-name {
+  width: 437px;
+}
+
+.email-input {
+  width: 437px;
+  margin-top: 19px;
+}
+
+.text-sec {
+  width: 437px;
+  height: 94px;
+  margin-top: -41px;
+  margin-left: 2px;
+}
+
+button.get-in-touch {
+  text-align: center;
+  margin-top: 12px;
+  margin-left: -156px;
+}
+
+button.get-in-touch:hover {
+  background: #1c1a19;
+  cursor: pointer;
+}
+
+.social-ico {
+  padding-top: 0;
+}
+
+.sep {
+  margin-top: 159px;
+  margin-left: -367px;
+  width: 1021px;
+}
+
+.last-sep {
+  display: none;
 }
 
 }
-
