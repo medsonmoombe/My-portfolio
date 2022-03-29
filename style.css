@@ -217,3 +217,7 @@ h2 {
     line-height: 24px;
   }
   
+  
+.desk-cards {
+  display: none;
+}
