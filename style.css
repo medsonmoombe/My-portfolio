@@ -451,7 +451,7 @@ ul li .main {
 article {
   width: 402px;
   height: inherit;
-  font-family: 'Inter' ,sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -490,7 +490,7 @@ label {
   position: absolute;
   height: 12px;
   left: 21px;
-  font-family: 'Inter' ,sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 32px;
