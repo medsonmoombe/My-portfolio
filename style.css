@@ -87,3 +87,133 @@ h2 {
   padding-left: 24px;
 }
 
+.work {
+  background-color: #fff;
+  }
+  
+  .h3 {
+    width: 336px;
+    height: 83px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 120px;
+    display: flex;
+    padding-left: 22px;
+    align-items: center;
+    color: #1C1A19;
+  }
+  
+  hr {
+    width: 314px;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 29px;
+  }
+  .placehoder {
+    text-align: center;
+    padding: 24px;
+  }
+  
+  .multi {
+    width: 327px;
+    height: 36px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: #091E42;
+  }
+  
+  .prg {
+    width: 340px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091E42;
+    padding: 24px;
+  }
+  
+  .tech-list {
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  ul.tech-list {
+    margin-left: 24px;
+    background: #FFFFFF;
+  
+  
+  }
+  
+  .lst1 {
+    border: 1px solid #8993A4;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+  
+  .lst2 {
+    border: 1px solid #8993A4;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+  
+  .lst3 {
+    border: 1px solid #8993A4;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+  
+  .lst4 {
+    border: 1px solid #8993A4;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+  
+  .btn {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 124px;
+    height: 48px;
+    background-color: #ff6b00;
+    color: #fff;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
