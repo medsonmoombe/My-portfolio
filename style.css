@@ -681,7 +681,8 @@ button {
   }
 
   .placehoder {
-    width: 627px;
+    max-width: 624px;
+    height: 440px;
   }
 
   .open-prg {
