@@ -565,7 +565,6 @@ button {
   margin-left: 2px;
 }
 
-
 /* Desktop version starts here! */
 
 @media screen and (min-width: 768px) {
@@ -670,7 +669,6 @@ button {
     text-align: center;
     margin-top: 120px;
     padding-left: 174px;
-
   }
 
   .work-2 {
@@ -678,14 +676,13 @@ button {
     flex-direction: row;
     text-align: center;
     align-items: center;
-     width: 100%;
+    width: 100%;
   }
 
   .placehoder {
     width: 48%;
     height: 448px;
     margin-left: 142px;
-    
   }
 
   .open-prg {
@@ -701,7 +698,6 @@ button {
     color: rgb(9, 30, 66);
     margin-top: -36px;
     padding-left: 0;
-
   }
 
   .prg {
@@ -738,7 +734,6 @@ button {
     align-items: center;
     margin-right: 107px;
     margin-left: 15px;
-
   }
 
   .desk-cards {
@@ -763,7 +758,6 @@ button {
   }
 
   .desktop-card1 {
-    
     display: flex;
     background-image: url("/images/desk-1.png");
     background-repeat: no-repeat;
@@ -782,7 +776,6 @@ button {
     margin-top: 355px;
     color: #fff;
     border: none;
-
   }
 
   .Profesional-first {
@@ -794,7 +787,7 @@ button {
     margin: 179px 10px;
   }
 
-.card-prg-1 {
+  .card-prg-1 {
     width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 13px;
@@ -822,7 +815,6 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    margin-left: 15px;
     max-width: 84%;
     margin-left: -23%;
   }
@@ -883,7 +875,6 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    margin-left: 15px;
     max-width: 84%;
     margin-left: -13%;
   }
@@ -895,7 +886,6 @@ button {
     color: #fff;
     margin: auto 22px;
     width: 269px;
-
   }
 
   .card-prg-5 {
@@ -915,7 +905,6 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    margin-left: 15px;
     max-width: 84%;
     margin-left: -23%;
   }
@@ -965,11 +954,11 @@ button {
   }
 
   .about-l {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    color: #F55800;
+    color: #f55800;
     margin-left: 24px;
   }
 
@@ -1086,13 +1075,18 @@ button {
     margin-left: -156px;
   }
 
-  .btn:hover,.see-proj:hover, button.get-in-touch:hover,.first-card:hover {
+  .btn:hover,
+  .see-proj:hover,
+  button.get-in-touch:hover,
+  .first-card:hover {
     background: #f3ab78;
     cursor: pointer;
     color: #f55800;
   }
 
-  .btn:active,.see-proj:active,.get-in-touch:active {
+  .btn:active,
+  .see-proj:active,
+  .get-in-touch:active {
     background-color: #aa3f0a;
     box-shadow: 0 5px gray;
     transform: translateY(4px);
@@ -1120,7 +1114,9 @@ button {
 }
 
 @media (min-width: 769px) and (max-width: 996px) {
-  li.card-lst3,.tech-list2 ,li.card-lst4 {
+  li.card-lst3,
+  .tech-list2,
+  li.card-lst4 {
     font-size: 3px;
   }
 }
