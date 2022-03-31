@@ -1113,10 +1113,3 @@ button {
   }
 }
 
-@media (min-width: 769px) and (max-width: 996px) {
-  li.card-lst3,
-  .tech-list2,
-  li.card-lst4 {
-    font-size: 3px;
-  }
-}
