@@ -347,7 +347,7 @@ ul.tech-list {
 }
 
 .prgs {
-  width: inherit;
+  width: 290px;
   height: 148px;
   left: 24px;
   font-family: "Inter", sans-serif;
@@ -599,8 +599,8 @@ button {
   .container {
     background-image: url(./images/header-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right bottom;
+    background-size: 52%;
+    background-position: right top;
     flex-direction: row-reverse;
     width: 100%;
     height: 870px;
@@ -652,7 +652,7 @@ button {
   }
 
   hr {
-    width: 44%;
+    width: 30%;
     align-items: center;
     margin-top: -34px;
     margin-bottom: 80px;
@@ -686,7 +686,7 @@ button {
   .placehoder {
     width: inherit;
     height: 448px;
-
+    min-width: 80%;
   }
 
   .open-prg {
@@ -706,15 +706,14 @@ button {
   }
 
   .prg {
-    
-    width: 329px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    line-height: 23px;
-    color: #091e42;
-    padding-top: -16px;
-    margin-left: -28px;
-    margin-top: -27px;
+      width: 319px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      line-height: 23px;
+      color: #091e42;
+      padding-top: -16px;
+      margin-left: -28px;
+      margin-top: -27px;
 
   }
 
@@ -736,7 +735,7 @@ button {
     grid-template-columns: auto auto auto;
     align-items: center;
     margin-right: 107px;
-    margin-left: 50px;
+    margin-left: 25px;
 
   }
 
@@ -747,9 +746,8 @@ button {
     justify-content: center;
     align-items: center;
     margin-left: 116px;
-    gap: -8px;
     margin-bottom: 130px;
-
+    gap: 32px;
   }
 
   .tech-list2 {
@@ -770,7 +768,7 @@ button {
     height: 414px;
     border: 1px solid black;
      margin-left: -8px;
-     min-width: 250px; 
+     min-width: 300px;
 
   }
 
@@ -786,27 +784,28 @@ button {
 
   .Profesional-first {
    
-    width: inherit;
-    font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: #fff;
-    margin: 179px 12px;
+      /* width: inherit; */
+      font-family: 'Crete Round', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #fff;
+      margin: 179px 10px;
 
   }
 
   .card-prg-1 {
     
-    width: inherit;
-    height: 64px;
+    width: 245px;
+    /* height: 78px; */
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 13px;
     line-height: 21px;
     color: #fff;
-    margin: 276px -326px;
-    padding: 0;
+    margin: 75px -221px;
+    /* padding: 0; */
+    margin-top: auto;
 
   }
 
@@ -817,8 +816,8 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    margin-left: 16px;
-    min-width: 250px;
+    margin-left: 4%;
+    min-width: 300px;
 
   }
 
@@ -830,31 +829,33 @@ button {
     width: inherit;
     height: 414px;
     margin-left: 15px;
-    min-width: 250px;
-
+    min-width: 300px;
+    margin-left: 4%;
+    /* min-width: 100%; */
   }
 
   .Profesional-second {
-    width: inherit;
     font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: #fff;
-    margin: 212px 12px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #fff;
+      margin: 179px 10px;
+
 
   }
 
   .card-prg-3 {
-    width: inherit;
-    height: 64px;
+    width: 245px;
+    /* height: 78px; */
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 13px;
     line-height: 21px;
     color: #fff;
-    margin: 276px -326px;
-    padding: 0;
+    margin: 76px -224px;
+    /* padding: 0; */
+    margin-top: auto;
 
   }
 
@@ -866,32 +867,27 @@ button {
     width: inherit;
     height: 404px;
     margin-left: -8px;
-    min-width: 250px; 
+    min-width: 300px;
 
   }
 
   .Profesional-fourth {
-    width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 44px;
     color: #fff;
-    margin: 179px -83px;
-
+    margin: auto 22px;
+    width: 269px;
   }
 
   .card-prg-4 {
-    width: inherit;
-    height: 64px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
     font-size: 13px;
     line-height: 21px;
-    color: #fff;
-    margin: 276px -326px;
-    padding: 0;
-
+    color: rgb(255, 255, 255);
+    margin-left: -293px;
+    margin-top: 278px;
+    width: 257px;
   }
 
   .desktop-card5 {
@@ -903,31 +899,28 @@ button {
     width: inherit;
     height: 414px;
     margin-left: 15px;
-    min-width: 250px;
-
+    min-width: 300px;
+    margin-left: 4%;
   }
 
   .Profesional-fifth {
-    width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 44px;
     color: #fff;
-    margin: 179px 12px;
+    margin: auto 22px;
+    width: 269px;
 
   }
 
   .card-prg-5 {
-    width: inherit;
-    height: 64px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
     font-size: 13px;
     line-height: 21px;
-    color: #fff;
-    margin: 276px -326px;
-    padding: 0;
+    color: rgb(255, 255, 255);
+    margin-left: -293px;
+    margin-top: 278px;
+    width: 257px;
 
   }
 
@@ -939,31 +932,29 @@ button {
     width: inherit;
     height: 414px;
     margin-left: 15px;
-    min-width: 250px;
-
+    min-width: 300px;
+    margin-left: 4%;
+    /* min-width: 100%; */
   }
 
   .Profesional-sixth {
-    width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 44px;
     color: #fff;
-    margin: 212px 12px;
+    margin: auto 22px;
+    width: 269px;
 
   }
 
   .card-prg-6 {
-    width: inherit;
-    height: 64px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
     font-size: 13px;
     line-height: 21px;
-    color: #fff;
-    margin: 276px -326px;
-    padding: 0;
+    color: rgb(255, 255, 255);
+    margin-left: -293px;
+    margin-top: 278px;
+    width: 257px;
 
   }
 
@@ -977,34 +968,41 @@ button {
 
   .about-section {
     display: grid;
+     width: 100%;
   }
 
   .container-2 {
     display: flex;
     background-color: #1c1a19;
     margin-top: 120px;
-    height: 59%;
+    height: 69%;
     padding-left: 24px;
     background-image: url(./images/illustration-about\ me@2x.png);
     background-repeat: no-repeat;
-    background-size: 515px;
+    background-size: 50%;
     background-position: right bottom;
-    width: 100%;
   }
 
   .about-l {
     width: 566px;
-    font-family: 'Crete Round', sans-serif;
+    height: 78px;
+    left: 0px;
+    top: 130px;
+
+    font-family: 'Crete Round';
+    font-style: normal;
     font-weight: 400;
-    font-size: 99px;
+    font-size: 72px;
     line-height: 82px;
-    padding-left: 40px;
+
+
+    color: #F55800;
   }
 
   .prgs {
-    width: 566px;
+    width: 48%;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 141%;
     line-height: 32px;
     padding-top: 60px;
     margin: 32px 36px;
@@ -1028,7 +1026,6 @@ button {
 
   .skills-display {
     display: flex;
-    gap: 150px;
   }
 
   .lang-skill {
@@ -1037,7 +1034,7 @@ button {
   }
 
   li.main {
-    width: 228px;
+    width: inherit;
     height: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -1133,7 +1130,18 @@ button {
 }
 
 
-@media (min-width:768px) and (max-width:992px){
+@media (min-width:768px) and (max-width:996px){
+  .container {
+    background-image: url(./images/header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-size: 412px;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 870px;
+  }
+
   .card-section {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -1190,19 +1198,19 @@ button {
 
   .Profesional-first {
    
-    width: inherit;
+    /* width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
     color: #fff;
-    margin: 179px 12px;
+    margin: 179px 12px; */
 
   }
 
   .card-prg-1 {
     
-    width: inherit;
+    /* width: inherit;
     height: 64px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1210,7 +1218,7 @@ button {
     line-height: 21px;
     color: #fff;
     margin: 276px -326px;
-    padding: 0;
+    padding: 0; */
 
   }
 
@@ -1238,18 +1246,18 @@ button {
   }
 
   .Profesional-second {
-    width: inherit;
+    /* width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
     color: #fff;
-    margin: 212px 12px;
+    margin: 212px 12px; */
 
   }
 
   .card-prg-3 {
-    width: inherit;
+    /* width: inherit;
     height: 64px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1257,7 +1265,7 @@ button {
     line-height: 21px;
     color: #fff;
     margin: 276px -326px;
-    padding: 0;
+    padding: 0; */
 
   }
 
@@ -1273,18 +1281,18 @@ button {
   }
 
   .Profesional-fourth {
-    width: inherit;
+    /* width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
     color: #fff;
-    margin: 179px -83px;
+    margin: 179px -83px; */
 
   }
 
   .card-prg-4 {
-    width: inherit;
+    /* width: inherit;
     height: 64px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1292,7 +1300,7 @@ button {
     line-height: 21px;
     color: #fff;
     margin: 276px -326px;
-    padding: 0;
+    padding: 0; */
 
   }
 
@@ -1310,18 +1318,18 @@ button {
   }
 
   .Profesional-fifth {
-    width: inherit;
+    /* width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
     color: #fff;
-    margin: 179px 12px;
+    margin: 179px 12px; */
 
   }
 
   .card-prg-5 {
-    width: inherit;
+    /* width: inherit;
     height: 64px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1329,7 +1337,7 @@ button {
     line-height: 21px;
     color: #fff;
     margin: 276px -326px;
-    padding: 0;
+    padding: 0; */
 
   }
 
@@ -1346,18 +1354,18 @@ button {
   }
 
   .Profesional-sixth {
-    width: inherit;
+    /* width: inherit;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
     color: #fff;
-    margin: 212px 12px;
+    margin: 212px 12px; */
 
   }
 
   .card-prg-6 {
-    width: inherit;
+    /* width: inherit;
     height: 64px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -1365,7 +1373,7 @@ button {
     line-height: 21px;
     color: #fff;
     margin: 276px -326px;
-    padding: 0;
+    padding: 0; */
 
   }
 
