@@ -652,7 +652,7 @@ button {
   }
 
   hr {
-    width: 43%;
+    width: 46%;
     align-items: center;
     margin-top: -34px;
     margin-bottom: 80px;
@@ -678,21 +678,20 @@ button {
     flex-direction: row;
     text-align: center;
     align-items: center;
-    padding-left: 143px;
-    width: 77%;
-
+     width: 100%;
   }
 
   .placehoder {
-    width: inherit;
+    width: 48%;
     height: 448px;
-    min-width: 71%;
+    margin-left: 142px;
+    
   }
 
   .open-prg {
     display: flex;
     flex-direction: column;
-    margin-top: -81px
+    margin-top: -55px;
   }
 
   .multi {
@@ -706,24 +705,22 @@ button {
   }
 
   .prg {
-      width: 319px;
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      line-height: 23px;
-      color: #091e42;
-      padding-top: -16px;
-      margin-left: -28px;
-      margin-top: -27px;
-
+    width: 366px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #091e42;
+    padding-top: -16px;
+    margin-left: -28px;
+    margin-top: -14px;
   }
 
   ul.tech-list {
-    margin-left: 8px; 
-    background: #fff;
-    margin-top: -15px;
+    margin-left: 8px;
+    background: rgb(255, 255, 255);
     gap: 6px;
     position: absolute;
-    margin-top: 115px;
+    margin-top: 135px;
   }
 
   .card-lst4 {
@@ -732,6 +729,7 @@ button {
 
   .btn {
     margin-left: 8px;
+    margin-top: 51px;
   }
 
   .card-section {
@@ -788,30 +786,22 @@ button {
   }
 
   .Profesional-first {
-   
-      /* width: inherit; */
-      font-family: 'Crete Round', sans-serif;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 44px;
-      color: #fff;
-      margin: 179px 10px;
-
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #fff;
+    margin: 179px 10px;
   }
 
-  .card-prg-1 {
-    
+.card-prg-1 {
     width: 100%;
-    /* height: 78px; */
     font-family: 'Inter', sans-serif;
-    /* font-weight: 400; */
     font-size: 13px;
     line-height: 21px;
     color: #fff;
     margin: 75px -221px;
-    /* padding: 0; */
     margin-top: auto;
-
   }
 
   .desktop-card2 {
@@ -823,7 +813,6 @@ button {
     height: 414px;
     margin-left: -13%;
     max-width: 84%;
-
   }
 
   .desktop-card3 {
@@ -836,32 +825,25 @@ button {
     margin-left: 15px;
     max-width: 84%;
     margin-left: -23%;
-    /* min-width: 100%; */
   }
 
   .Profesional-second {
     font-family: 'Crete Round', sans-serif;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 44px;
-      color: #fff;
-      margin: 179px 10px;
-
-
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #fff;
+    margin: 179px 10px;
   }
 
   .card-prg-3 {
     width: 100%;
-    /* height: 78px; */
     font-family: 'Inter', sans-serif;
-    /* font-weight: 400; */
     font-size: 13px;
     line-height: 21px;
     color: #fff;
     margin: 76px -224px;
-    /* padding: 0; */
     margin-top: auto;
-
   }
 
   .desktop-card4 {
@@ -873,7 +855,6 @@ button {
     height: 404px;
     margin-left: -8px;
     max-width: 84%;
-
   }
 
   .Profesional-fourth {
@@ -891,12 +872,11 @@ button {
     line-height: 21px;
     color: rgb(255, 255, 255);
     margin-left: -293px;
-    margin-top: 278px;
+    margin-top: 261px;
     width: 100%;
   }
 
   .desktop-card5 {
-   
     display: flex;
     background-image: url(/images/desk-3.png);
     background-repeat: no-repeat;
@@ -924,9 +904,8 @@ button {
     line-height: 21px;
     color: rgb(255, 255, 255);
     margin-left: -293px;
-    margin-top: 278px;
+    margin-top: 261px;
     width: 100%;
-
   }
 
   .desktop-card6 {
@@ -939,7 +918,6 @@ button {
     margin-left: 15px;
     max-width: 84%;
     margin-left: -23%;
-    /* min-width: 100%; */
   }
 
   .Profesional-sixth {
@@ -949,7 +927,6 @@ button {
     color: #fff;
     margin: auto 22px;
     width: 269px;
-
   }
 
   .card-prg-6 {
@@ -958,9 +935,8 @@ button {
     line-height: 21px;
     color: rgb(255, 255, 255);
     margin-left: -293px;
-    margin-top: 278px;
+    margin-top: 261px;
     width: 100%;
-
   }
 
   .card-1 {
@@ -973,7 +949,7 @@ button {
 
   .about-section {
     display: grid;
-     width: 100%;
+    width: 100%;
   }
 
   .container-2 {
@@ -989,19 +965,12 @@ button {
   }
 
   .about-l {
-    width: 566px;
-    height: 78px;
-    left: 0px;
-    top: 130px;
-
     font-family: 'Crete Round';
-    font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-
-
     color: #F55800;
+    margin-left: 24px;
   }
 
   .prgs {
@@ -1015,6 +984,7 @@ button {
 
   .see-proj {
     margin: 129px 45px;
+    border: none;
   }
 
   .hr {
@@ -1036,6 +1006,7 @@ button {
   .lang-skill {
     display: flex;
     flex-direction: column;
+    margin: 0 50px;
   }
 
   li.main {
@@ -1066,25 +1037,23 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: fit-content;
+    width: 50%;
     height: inherit;
     text-align: center;
     margin-top: -279px;
-    margin-left: 184px;
+    margin-left: 388px;
   }
 
   article {
-    width: 24%;
+    width: 41%;
     height: 261px;
-    font-family: 'Inter', sans-serif;
-    /* font-weight: 700; */
+    font-family: Inter, sans-serif;
     font-size: 38px;
     line-height: 52px;
-    display: flex;
     align-items: center;
-    color: #262626;
+    color: rgb(38, 38, 38);
     margin-top: 220px;
-    margin-left: -702px;
+    margin-left: -682px;
     position: inherit;
     justify-content: center;
     display: flex;
@@ -1117,9 +1086,22 @@ button {
     margin-left: -156px;
   }
 
-  button.get-in-touch:hover {
-    background: #1c1a19;
+  .btn:hover,.see-proj:hover, button.get-in-touch:hover,.first-card:hover {
+    background: #f3ab78;
     cursor: pointer;
+    color: #f55800;
+  }
+
+  .btn:active,.see-proj:active,.get-in-touch:active {
+    background-color: #aa3f0a;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+    color: #fff;
+    border: none;
+  }
+
+  .first-card:enabled {
+    color: #fff;
   }
 
   .social-ico {
