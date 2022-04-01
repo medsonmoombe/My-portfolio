@@ -1112,3 +1112,35 @@ button {
     display: none;
   }
 }
+
+.btn:hover {
+  transform: scale(1.5) ;
+  -webkit-transform: scale(1.5) ;
+  -moz-transform: scale(1.5) ;
+  -ms-transform: scale(1.5) ;
+  -o-transform: scale(1.5) ;
+}
+
+.btn-2:hover {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.get-in-touch:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+input:hover {
+  transform: translate(1rem);
+  -webkit-transform: translate(1rem);
+  -moz-transform: translate(1rem);
+  -ms-transform: translate(1rem);
+  -o-transform: translate(1rem);
+}
