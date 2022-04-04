@@ -17,7 +17,7 @@
 
 .container {
   height: 600px;
-  background-image: url(./image/illustration-header-mobile.png);
+  background-image: url("image/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: 228px 260px;
   background-color: #1c1a19;
@@ -223,7 +223,7 @@ ul.tech-list {
 }
 
 .card-1 {
-  background-image: url(./images/img-1.png);
+  background-image: url("images/img-1.png");
   background-repeat: no-repeat;
   margin: 24px;
   height: 386px;
@@ -329,7 +329,7 @@ ul.tech-list {
   margin-top: 120px;
   height: 600px;
   padding-left: 24px;
-  background-image: url(./images/abt-img.png);
+  background-image: url("images/abt-img.png");
   background-repeat: no-repeat;
   background-position: 233px 276px;
   flex-direction: column;
@@ -596,7 +596,7 @@ button {
   }
 
   .container {
-    background-image: url(./images/header-desktop.png);
+    background-image: url("images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: 52%;
     background-position: right top;
@@ -759,7 +759,7 @@ button {
 
   .desktop-card1 {
     display: flex;
-    background-image: url("/images/desk-1.png");
+    background-image: url("images/desk-1.png");
     background-repeat: no-repeat;
     background-size: 344px;
     width: 84%;
@@ -799,7 +799,7 @@ button {
 
   .desktop-card2 {
     display: flex;
-    background-image: url(/images/desk-3.png);
+    background-image: url("images/desk-3.png");
     background-repeat: no-repeat;
     background-size: 347px;
     width: inherit;
@@ -810,7 +810,7 @@ button {
 
   .desktop-card3 {
     display: flex;
-    background-image: url(/images/desk-4.png);
+    background-image: url("images/desk-4.png");
     background-repeat: no-repeat;
     background-size: 347px;
     width: inherit;
@@ -840,7 +840,7 @@ button {
 
   .desktop-card4 {
     display: flex;
-    background-image: url(/images/img-1.png);
+    background-image: url("images/img-1.png");
     background-repeat: no-repeat;
     background-size: 347px;
     width: inherit;
@@ -870,7 +870,7 @@ button {
 
   .desktop-card5 {
     display: flex;
-    background-image: url(/images/desk-3.png);
+    background-image: url("images/desk-3.png");
     background-repeat: no-repeat;
     background-size: 347px;
     width: inherit;
@@ -900,7 +900,7 @@ button {
 
   .desktop-card6 {
     display: flex;
-    background-image: url(/images/desk-4.png);
+    background-image: url("images/desk-4.png");
     background-repeat: no-repeat;
     background-size: 347px;
     width: inherit;
@@ -947,7 +947,7 @@ button {
     margin-top: 120px;
     height: 69%;
     padding-left: 24px;
-    background-image: url(./images/illustration-about\ me@2x.png);
+    background-image: url("images/illustration-about\ me@2x.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right bottom;

@@ -10,9 +10,9 @@
 - Html
 - Css
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://github.com/medsonmoombe/My-portfolio)
+[Live Demo Link]( https://medsonmoombe.github.io/My-portfolio/)
 
 
 
