@@ -163,7 +163,6 @@ ul.tech-list {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 12px;
-  height: 40px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -176,7 +175,6 @@ ul.tech-list {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 12px;
-  height: 40px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -189,7 +187,6 @@ ul.tech-list {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 12px;
-  height: 40px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -202,7 +199,6 @@ ul.tech-list {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 12px;
-  height: 40px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -216,7 +212,6 @@ ul.tech-list {
   margin-bottom: 12px;
   align-items: center;
   padding: 12px;
-  height: 48px;
   background-color: #ff6b00;
   color: #fff;
   margin-left: 24px;
@@ -640,7 +635,7 @@ button {
     width: 30%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 52px;
+    font-weight: 500;
     margin-left: 108px;
     font-size: 20px;
     line-height: 25px;
@@ -1005,13 +1000,13 @@ button {
     margin-top: 20px;
     width: 20%;
     margin-left: 71px;
-  } 
+  }
 
   .see-proj {
     width: auto;
     height: auto;
     border: none;
-    position:absolute;
+    position: absolute;
   }
 
   .hr {
@@ -1089,7 +1084,6 @@ button {
     position: inherit;
     justify-content: center;
     display: flex;
-    width: 50%;
   }
 
   .footer {
