@@ -85,6 +85,10 @@ h2 {
   padding-left: 24px;
 }
 
+.desktop-icons {
+  display: none;
+}
+
 .work {
   background-color: #fff;
 }
@@ -114,6 +118,10 @@ hr {
 .placehoder {
   text-align: center;
   padding: 24px;
+}
+
+.placeholder2 {
+  display: none;
 }
 
 .multi {
@@ -160,6 +168,8 @@ ul.tech-list {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  width: auto;
+  height: auto;
 }
 
 .lst2 {
@@ -171,6 +181,8 @@ ul.tech-list {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  width: auto;
+  height: auto;
 }
 
 .lst3 {
@@ -182,6 +194,8 @@ ul.tech-list {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  width: auto;
+  height: auto;
 }
 
 .lst4 {
@@ -193,16 +207,15 @@ ul.tech-list {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  width: auto;
+  height: auto;
 }
 
 .btn {
   margin-top: 12px;
   margin-bottom: 12px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 12px;
-  width: 124px;
   height: 48px;
   background-color: #ff6b00;
   color: #fff;
@@ -212,6 +225,8 @@ ul.tech-list {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  width: fit-content;
+  height: auto;
 }
 
 .card-section {
@@ -309,7 +324,7 @@ ul.tech-list {
   width: 327px;
   padding-left: 100px;
   height: 48px;
-  background-color: #ff6b00;
+  background-color: #a5490c;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -373,7 +388,7 @@ ul.tech-list {
   padding: 22px;
   letter-spacing: 0.03em;
   color: #fff;
-  background-color: #ff6b00;
+  background-color: #a04907;
   flex: none;
   margin-left: 12px;
   margin-top: 37px;
@@ -524,8 +539,8 @@ button.get-in-touch {
   width: 131px;
   height: 48px;
   margin: 20px 139px;
-  color: #fff;
-  background-color: #ff6b00;
+  color: #ffff;
+  background-color: #af4e08;
   border: none;
   font-size: 17px;
 }
@@ -600,48 +615,49 @@ button {
     background-repeat: no-repeat;
     background-size: 52%;
     background-position: right top;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
     height: 870px;
   }
 
   .cont {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 647px;
+    padding-top: 149px;
   }
 
   ul.social-icons {
+    display: none;
+  }
+
+  ul.desktop-icons {
     display: flex;
     flex-direction: column;
-    margin-top: -143px;
-    margin-right: 125px;
+    gap: 27px;
+    margin-top: -354px;
+    margin-left: 35px;
   }
 
   .prg1 {
-    width: 512px;
-    height: 123px;
+    width: 30%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    margin-left: -49px;
+    font-weight: 52px;
+    margin-left: 108px;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 25px;
   }
 
   .h1 {
-    width: 426px;
-    height: 124px;
-    padding-top: 253px;
-    padding-left: 143px;
+    width: auto;
+    position: relative;
+    margin-left: 109px;
+    padding-top: 52px;
+    line-height: 60px;
   }
 
   h2 {
-    width: 421px;
-    height: 27px;
-    margin-top: 203px;
-    padding-left: 143px;
+    position: relative;
+    width: auto;
+    margin-left: 107px;
   }
 
   .work {
@@ -650,17 +666,23 @@ button {
     width: 100%;
   }
 
-  hr {
-    width: 46%;
+  .hr-line {
+    display: flex;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .work-hr {
+    width: 40%;
     align-items: center;
-    margin-top: -34px;
-    margin-bottom: 80px;
-    text-align: center;
-    margin-left: 482px;
+    margin-top: 156px;
+    margin-left: 557px;
+    height: 0;
+    position: absolute;
   }
 
   .h3 {
-    width: 472px;
+    width: 70%;
     height: 83px;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
@@ -680,6 +702,11 @@ button {
   }
 
   .placehoder {
+    display: none;
+  }
+
+  .placeholder2 {
+    display: block;
     width: 48%;
     height: 448px;
     margin-left: 142px;
@@ -688,7 +715,7 @@ button {
   .open-prg {
     display: flex;
     flex-direction: column;
-    margin-top: -55px;
+    margin-top: -50px;
   }
 
   .multi {
@@ -696,12 +723,13 @@ button {
     font-family: "Crete Round", sans-serif;
     font-size: 34px;
     color: rgb(9, 30, 66);
-    margin-top: -36px;
+    margin-top: 54px;
     padding-left: 0;
+    width: 92%;
   }
 
   .prg {
-    width: 366px;
+    width: 79%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 23px;
@@ -715,8 +743,7 @@ button {
     margin-left: 8px;
     background: rgb(255, 255, 255);
     gap: 6px;
-    position: absolute;
-    margin-top: 135px;
+    margin-top: -20px;
   }
 
   .card-lst4 {
@@ -734,26 +761,28 @@ button {
     align-items: center;
     margin-right: 107px;
     margin-left: 15px;
+    width: 90%;
   }
 
   .desk-cards {
     display: grid;
     position: relative;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-    margin-left: 160px;
+    margin-left: 109px;
     margin-bottom: 130px;
     gap: 15px;
   }
 
   .tech-list2 {
     display: flex;
-    flex-flow: row wrap;
     margin-left: 16px;
     margin-top: 353px;
     position: absolute;
-    width: inherit;
+    width: auto;
+    height: auto;
     gap: 4px;
   }
 
@@ -772,7 +801,7 @@ button {
   button.first-card {
     width: 100%;
     height: 55px;
-    background: #f55800;
+    background: #c06029;
     margin-top: 355px;
     color: #fff;
     border: none;
@@ -813,7 +842,6 @@ button {
     background-image: url("images/desk-4.png");
     background-repeat: no-repeat;
     background-size: 347px;
-    width: inherit;
     height: 414px;
     max-width: 84%;
     margin-left: -23%;
@@ -843,7 +871,6 @@ button {
     background-image: url("images/img-1.png");
     background-repeat: no-repeat;
     background-size: 347px;
-    width: inherit;
     height: 404px;
     margin-left: -8px;
     max-width: 84%;
@@ -873,7 +900,6 @@ button {
     background-image: url("images/desk-3.png");
     background-repeat: no-repeat;
     background-size: 347px;
-    width: inherit;
     height: 414px;
     max-width: 84%;
     margin-left: -13%;
@@ -903,7 +929,6 @@ button {
     background-image: url("images/desk-4.png");
     background-repeat: no-repeat;
     background-size: 347px;
-    width: inherit;
     height: 414px;
     max-width: 84%;
     margin-left: -23%;
@@ -942,10 +967,11 @@ button {
   }
 
   .container-2 {
-    display: flex;
+    display: grid;
     background-color: #1c1a19;
     margin-top: 120px;
-    height: 69%;
+    height: 100%;
+    width: inherit;
     padding-left: 24px;
     background-image: url("images/illustration-about\ me@2x.png");
     background-repeat: no-repeat;
@@ -960,26 +986,38 @@ button {
     line-height: 82px;
     color: #f55800;
     margin-left: 24px;
+    padding-top: 158px;
   }
 
   .prgs {
-    width: 48%;
+    width: 30%;
     font-weight: 400;
     font-size: 141%;
     line-height: 32px;
     padding-top: 60px;
-    margin: 32px 36px;
+    margin: 6px 36px;
+    height: 63%;
   }
 
+  .about-btn {
+    position: relative;
+    height: 20%;
+    margin-top: 20px;
+    width: 20%;
+    margin-left: 71px;
+  } 
+
   .see-proj {
-    margin: 129px 45px;
+    width: auto;
+    height: auto;
     border: none;
+    position:absolute;
   }
 
   .hr {
-    margin: 122px auto;
+    margin: 138px auto;
     width: 80%;
-    margin-top: -2px;
+    margin-top: 144px;
   }
 
   .skills {
@@ -995,16 +1033,20 @@ button {
   .lang-skill {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 5px 50px;
   }
 
   li.main {
+    display: none;
+  }
+
+  li.main2 {
     width: inherit;
-    height: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+    position: relative;
   }
 
   li.li {
@@ -1019,6 +1061,7 @@ button {
 
   .form-section {
     margin: auto;
+    width: 100%;
   }
 
   .form {
@@ -1034,7 +1077,7 @@ button {
   }
 
   article {
-    width: 41%;
+    width: 76%;
     height: 261px;
     font-family: Inter, sans-serif;
     font-size: 38px;
@@ -1046,6 +1089,7 @@ button {
     position: inherit;
     justify-content: center;
     display: flex;
+    width: 50%;
   }
 
   .footer {
