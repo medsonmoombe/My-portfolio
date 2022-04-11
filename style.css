@@ -46,6 +46,10 @@ body {
   align-items: flex-start;
 }
 
+li {
+  list-style: none;
+}
+
 .ul-list {
   display: flex;
   flex-direction: column;
@@ -54,27 +58,6 @@ body {
   gap: 20px;
   width: 100%;
   padding: 6rem;
-}
-
-li {
-  list-style: none;
-}
-
-.ul-list li:nth-child(1),
-.ul-list li:nth-child(2),
-.ul-list li:nth-child(3) {
-  border-bottom: thin solid gainsboro;
-  padding: 0 0 0.5rem 1rem;
-  margin-bottom: 0.8rem;
-  color: #fff5e1;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-nav > logo {
-  font-size: 1rem;
-  font-weight: bold;
-  animation: name-effect 3s;
 }
 
 @keyframes name-effect {
@@ -492,6 +475,17 @@ ul li {
   margin-bottom: 32px;
   font-size: 22px;
   padding-left: 38px;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(2),
+.ul-list li:nth-child(1) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 ul li .main {
