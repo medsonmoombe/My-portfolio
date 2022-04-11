@@ -5,6 +5,7 @@ const nav = document.querySelector('nav');
 const closeBtn = document.querySelector('.close-btn');
 const menuItems = document.querySelectorAll('.menu-item');
 const menuMobile = document.querySelector('.menu-mobile');
+const projectsSection = document.querySelector('#portfolio_projects');
 
 /* add the reset menu function */
 
@@ -127,12 +128,51 @@ function createDiv(see_project_btn_id) {
   projectsTitle.innerText = `${projects[see_project_btn_id].title}`;
   projectsTitle.classList.toggle('popup-title');
   projectsLanguages.innerHTML = `<div>${projects[see_project_btn_id].technologies[0]}</div>
-  <div>${projects[buttonId].technologies[1]}</div>
-  <div>${projects[buttonId].technologies[2]}</div>`;
+  <div>${projects[see_project_btn_id].technologies[1]}</div>
+  <div>${projects[see_project_btn_id].technologies[2]}</div>`;
   projectsLanguages.classList.toggle('popup-languages');
   images.src = `${projects[see_project_btn_id].image}`;
   images.classList.toggle('popup-img');
   paragraph.innerText = `${projects[see_project_btn_id].description}`;
   paragraph.classList.toggle('popup-paragraph');
 
+
+  liveBtn.textContent = 'See Live';
+  liveBtn.href = `${projects[see_project_btn_id].live_link}`;
+  sourceBtn.textContent = 'See Source';
+  sourceBtn.href = `${projects[see_project_btn_id].source_link}`;
+  liveBtn.classList.add('popup-btn', 'live');
+  sourceBtn.classList.add('popup-btn', 'popup-margin', 'source');
+  exitBtn.style.backgroundImage = "URL('icons/Icon.png')";
+  exitBtn.style.backgroundRepeat = 'no-repeat';
+  exitBtn.style.backgroundSize = 'cover';
+  exitBtn.classList.add('popup-exit');
+  div.classList.toggle('popup');
+
+  if (window.innerWidth < 768) {
+    div.classList.toggle('mobile-width');
+    projectsTitle.classList.toggle('mobile-title');
+    projectsLanguages.classList.toggle('mobile-languages');
+    images.classList.toggle('popup-mobile-img');
+    paragraph.classList.toggle('popup-mobile-p');
+    sourceBtn.classList.toggle('mobile-btn');
+    liveBtn.classList.toggle('mobile-btn');
+  
+
+}
+div.appendChild(projectsTitle);
+  div.appendChild(projectsLanguages);
+  div.appendChild(images);
+  div.appendChild(paragraph);
+  div.appendChild(liveBtn);
+  div.appendChild(sourceBtn);
+  div.appendChild(projectExitBtn);
+  projectsSection.appendChild(div);
+
+  projectExitBtn.addEventListener('click', () => {
+    div.remove();
+    document.body.classList.toggle('no-scroll');
+    document.body.style.background = '#fff';
+    blurProjects.forEach((project) => project.classList.toggle('blur'));
+  });
 }
