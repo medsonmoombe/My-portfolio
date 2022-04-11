@@ -55,9 +55,14 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   width: 100%;
   padding: 6rem;
+  padding-left: 25px;
+  margin-top: -29px;
+}
+
+.menu-item {
+  margin-left: 2px;
 }
 
 @keyframes name-effect {
@@ -75,9 +80,14 @@ li {
   }
 }
 
-a {
-  color: white;
+ul.menu-mobile a {
+  color: #fff5e1;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: -302px;
 }
 
 .menu-item,
@@ -92,8 +102,10 @@ a {
 
 .close-btn {
   display: block;
-  position: relative;
-  left: 90%;
+  position: absolute;
+  margin-left: 335px;
+  font-size: 25px;
+  color: #6f6c6b;
 }
 
 h4 {
@@ -480,11 +492,10 @@ ul li {
 .ul-list li:nth-child(3),
 .ul-list li:nth-child(2),
 .ul-list li:nth-child(1) {
-  border-bottom: thin solid gainsboro;
-  padding: 0 0 0.5rem 1rem;
+  border-bottom: 1px solid #6F6C6B;
+  padding: 0 0 0.5rem 20rem;
   margin-bottom: 0.8rem;
   color: #fff5e1;
-  font-size: 2.5rem;
   font-weight: 700;
 }
 
