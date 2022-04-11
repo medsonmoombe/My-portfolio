@@ -5,6 +5,15 @@
   list-style: none;
 }
 
+html,
+body {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +36,76 @@
 .fa-bars {
   padding-top: 12px;
   padding-right: 20px;
+}
+
+.expand {
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+li {
+  list-style: none;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6rem;
+  padding-left: 25px;
+  margin-top: -29px;
+}
+
+.menu-item {
+  margin-left: 2px;
+}
+
+@keyframes name-effect {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #fc6703;
+    text-shadow: 0 0 20px #fc6703;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+ul.menu-mobile a {
+  color: #fff5e1;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: -302px;
+}
+
+.menu-item,
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
+}
+
+.close-btn {
+  display: block;
+  position: fixed;
+  margin-left: 335px;
+  font-size: 25px;
+  color: #6f6c6b;
 }
 
 h4 {
@@ -410,6 +489,16 @@ ul li {
   padding-left: 38px;
 }
 
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(2),
+.ul-list li:nth-child(1) {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 0 0 0.5rem 20rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-weight: 700;
+}
+
 ul li .main {
   font-size: 32px;
   padding-left: 0;
@@ -449,11 +538,11 @@ ul li .main {
 }
 
 article {
-  width: 402px;
+  width: 384px;
   height: inherit;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -805,7 +894,7 @@ button {
     width: inherit;
     height: 414px;
     margin-left: -13%;
-    max-width: 84%;
+    max-width: 90%;
   }
 
   .desktop-card3 {
@@ -815,7 +904,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -23%;
   }
 
@@ -846,7 +935,7 @@ button {
     width: inherit;
     height: 404px;
     margin-left: -8px;
-    max-width: 84%;
+    max-width: 90%;
   }
 
   .Profesional-fourth {
@@ -875,7 +964,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -13%;
   }
 
@@ -905,7 +994,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -23%;
   }
 
