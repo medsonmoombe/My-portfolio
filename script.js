@@ -33,3 +33,81 @@ humburger.addEventListener('click', () => {
 /* Add th event listner to the close button */
 
 closeBtn.addEventListener('click', resetMobileMenu);
+
+
+
+/* project card section*/
+
+
+const projects = [
+  {
+    id: 'see-project-btn',
+    title: 'Multi-Post Stories',
+    image: 'images/placeholder1.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Professional Art Printing Data',
+    image: 'images/desk-1.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Data Dashboard Healthcare',
+    image: 'images/desk-3.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link:'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Website Portfolio',
+    image: 'images/desk-3.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Professional Art Printing Data',
+    image: 'images/desk-4.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link:'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Data Dashboard Healthcare',
+    image: 'images/desk-1.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+  },
+  {
+    id: 'see-project-mobile',
+    title: 'Website Portfolio',
+    image: 'images/desk-3.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+  },
+];
