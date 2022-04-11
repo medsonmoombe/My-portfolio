@@ -102,7 +102,7 @@ ul.menu-mobile a {
 
 .close-btn {
   display: block;
-  position: absolute;
+  position: fixed;
   margin-left: 335px;
   font-size: 25px;
   color: #6f6c6b;
@@ -492,7 +492,7 @@ ul li {
 .ul-list li:nth-child(3),
 .ul-list li:nth-child(2),
 .ul-list li:nth-child(1) {
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   padding: 0 0 0.5rem 20rem;
   margin-bottom: 0.8rem;
   color: #fff5e1;
