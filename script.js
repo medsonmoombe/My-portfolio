@@ -18,6 +18,8 @@ function resetMobileMenu() {
     closeBtn.classList.remove('.close-btn');
   }
 
+  /* Add event listner to humbergur button*/
+
   humburger.addEventListener('click', () => {
     menuItems.forEach((item) => item.classList.add('show'));
     nav.classList.add('expand');
@@ -28,3 +30,15 @@ function resetMobileMenu() {
   
     menuItems.forEach((item) => item.addEventListener('click', resetMobileMenu));
   });
+
+  /* Add th event listner to the close button*/
+
+  closeBtn.addEventListener('click', resetMobileMenu);
+  
+  function resizeWindow() {
+    if (window.innerWidth > 768) {
+        resetMobileMenu();
+    }
+  }
+  
+  window.addEventListener('resize', resetMobileMenu);
