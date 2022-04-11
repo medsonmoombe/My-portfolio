@@ -111,3 +111,28 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/My-Portfolio',
   },
 ];
+
+
+/*Creat popup div function*/
+
+function createDiv(see_project_btn_id) {
+  const div = document.createElement('div');
+  const liveBtn = document.createElement('a');
+  const sourceBtn = document.createElement('a');
+  const exitBtn = document.createElement('button');
+  const projectsTitle = document.createElement('h3');
+  const projectsLanguages = document.createElement('div');
+  const images = document.createElement('img');
+  const paragraph = document.createElement('p');
+  projectsTitle.innerText = `${projects[see_project_btn_id].title}`;
+  projectsTitle.classList.toggle('popup-title');
+  projectsLanguages.innerHTML = `<div>${projects[see_project_btn_id].technologies[0]}</div>
+  <div>${projects[buttonId].technologies[1]}</div>
+  <div>${projects[buttonId].technologies[2]}</div>`;
+  projectsLanguages.classList.toggle('popup-languages');
+  images.src = `${projects[see_project_btn_id].image}`;
+  images.classList.toggle('popup-img');
+  paragraph.innerText = `${projects[see_project_btn_id].description}`;
+  paragraph.classList.toggle('popup-paragraph');
+
+}
