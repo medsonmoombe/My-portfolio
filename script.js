@@ -17,3 +17,14 @@ function resetMobileMenu() {
     humburger.style.display = 'block';
     closeBtn.classList.remove('.close-btn');
   }
+
+  humburger.addEventListener('click', () => {
+    menuItems.forEach((item) => item.classList.add('show'));
+    nav.classList.add('expand');
+    logo.classList.add('hidden');
+    menuMobile.classList.add('ul-list');
+    humburger.style.display = 'none';
+    closeBtn.classList.add('close-btn');
+  
+    menuItems.forEach((item) => item.addEventListener('click', resetMobileMenu));
+  });
