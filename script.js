@@ -6,6 +6,7 @@ const closeBtn = document.querySelector('.close-btn');
 const menuItems = document.querySelectorAll('.menu-item');
 const menuMobile = document.querySelector('.menu-mobile');
 const projectsSection = document.querySelector('#portfolio_projects');
+const blur = document.querySelectorAll('#projects > div');
 
 /* add the reset menu function */
 
@@ -169,10 +170,70 @@ div.appendChild(projectsTitle);
   div.appendChild(projectExitBtn);
   projectsSection.appendChild(div);
 
-  projectExitBtn.addEventListener('click', () => {
+  exitBtn.addEventListener('click', () => {
     div.remove();
     document.body.classList.toggle('no-scroll');
     document.body.style.background = '#fff';
+    blur.forEach((project) => project.classList.toggle('blur'));
+  });
+}
+
+/*cards-section*/
+
+const grid = document.getElementById('cardSection');
+function createProjectsContainer() {
+  for (let i = 1; i < projects.length; i += 1) {
+    const projectContainer = document.createElement('div');
+    projectContainer.setAttribute('class', 'desk-cards');
+    projectContainer.setAttribute('id', `deskCards${i}`);
+    grid.appendChild(projectContainer);
+  }
+}
+createProjectsContainer();
+
+const workSectionDiv = document.querySelectorAll('.desk-cards');
+
+let counter = 0;
+function createElements(project) {
+  project.innerHTML = `
+
+          <img
+          src=${projects[counter].image}
+          alt="project"
+          class="hidden" 
+          data-img="image"
+        />
+          <div class="desktop-card4">
+          <h6 class="Profesional-fourth">${projects[counter].title}</h6>
+          <p class="card-prg-4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+         <ul class="tech-list2">
+            <li class="card-lst2">html</li>
+            <li class="card-lst3">bootstrap</li>
+            <li class="card-lst4">Ruby</li>
+           </ul>
+          </div>
+          <button
+          type="button"
+          class="btn project-btn"
+          id="mini-project-btn${counter + 1}"
+        >
+          See Project
+        </button>`;
+  counter += 1;
+}
+
+workSectionDiv.forEach(createElements);
+
+const buttons = [...document.querySelectorAll('.project-btn')];
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', () => {
+    createDiv(i);
+    document.body.style.background = 'black';
+    document.body.classList.toggle('no-scroll');
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }

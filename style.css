@@ -819,10 +819,12 @@ button {
 
   .card-section {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin-right: 107px;
-    margin-left: 15px;
+    margin-left: 276px;
+    justify-content: center;
+    padding-right: 30px;
+    margin-bottom: 97px;
   }
 
   .desk-cards {
@@ -831,8 +833,8 @@ button {
     grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-    margin-left: 160px;
-    margin-bottom: 130px;
+    margin-left: -126px;
+    margin-bottom: 20px;
     gap: 15px;
   }
 
@@ -840,10 +842,9 @@ button {
     display: flex;
     flex-flow: row wrap;
     margin-left: 16px;
-    margin-top: 353px;
+    margin-top: 289px;
     position: absolute;
     width: inherit;
-    gap: 4px;
   }
 
   .desktop-card1 {
@@ -858,13 +859,15 @@ button {
     max-width: 342px;
   }
 
-  button.first-card {
-    width: 100%;
-    height: 55px;
-    background: #f55800;
-    margin-top: 355px;
-    color: #fff;
+  .project-btn {
+    margin-left: 14px;
+    width: 328px;
+    height: 43px;
+    background: rgb(245, 88, 0);
+    margin-top: 343px;
+    color: rgb(255, 255, 255);
     border: none;
+    position: absolute;
   }
 
   .Profesional-first {
@@ -931,11 +934,11 @@ button {
     display: flex;
     background-image: url("images/img-1.png");
     background-repeat: no-repeat;
-    background-size: 347px;
+    /* background-size: 345px; */
     width: inherit;
-    height: 404px;
-    margin-left: -8px;
-    max-width: 90%;
+    height: 399px;
+    margin-left: 14px;
+    max-width: 90%;;
   }
 
   .Profesional-fourth {
@@ -943,7 +946,7 @@ button {
     font-weight: 400;
     font-size: 30px;
     color: #fff;
-    margin: auto 22px;
+    margin: 140px 22px;
     width: 269px;
   }
 
@@ -953,8 +956,8 @@ button {
     line-height: 21px;
     color: rgb(255, 255, 255);
     margin-left: -293px;
-    margin-top: 261px;
-    width: 100%;
+    margin-top: 222px;
+    width: 60%;
   }
 
   .desktop-card5 {
