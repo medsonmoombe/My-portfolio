@@ -5,6 +5,15 @@
   list-style: none;
 }
 
+html,
+body {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +36,81 @@
 .fa-bars {
   padding-top: 12px;
   padding-right: 20px;
+}
+
+.expand {
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 6rem;
+}
+
+li {
+  list-style: none;
+}
+
+.ul-list li:nth-child(1),
+.ul-list li:nth-child(2),
+.ul-list li:nth-child(3) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav > logo {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: name-effect 3s;
+}
+
+@keyframes name-effect {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #fc6703;
+    text-shadow: 0 0 20px #fc6703;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item,
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
+}
+
+.close-btn {
+  display: block;
+  position: relative;
+  left: 90%;
 }
 
 h4 {
@@ -449,7 +533,6 @@ ul li .main {
 }
 
 article {
-  border: 1px solid;
   width: 384px;
   height: inherit;
   font-family: 'Inter', sans-serif;
