@@ -449,11 +449,12 @@ ul li .main {
 }
 
 article {
-  width: 402px;
+  border: 1px solid;
+  width: 384px;
   height: inherit;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
@@ -805,7 +806,7 @@ button {
     width: inherit;
     height: 414px;
     margin-left: -13%;
-    max-width: 84%;
+    max-width: 90%;
   }
 
   .desktop-card3 {
@@ -815,7 +816,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -23%;
   }
 
@@ -846,7 +847,7 @@ button {
     width: inherit;
     height: 404px;
     margin-left: -8px;
-    max-width: 84%;
+    max-width: 90%;
   }
 
   .Profesional-fourth {
@@ -875,7 +876,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -13%;
   }
 
@@ -905,7 +906,7 @@ button {
     background-size: 347px;
     width: inherit;
     height: 414px;
-    max-width: 84%;
+    max-width: 90%;
     margin-left: -23%;
   }
 
