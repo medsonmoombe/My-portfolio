@@ -5,8 +5,8 @@ const nav = document.querySelector("nav");
 const closeBtn = document.querySelector(".close-btn");
 const menuItems = document.querySelectorAll(".menu-item");
 const menuMobile = document.querySelector(".menu-mobile");
-const projectsSection = document.querySelector('modal');
-const blur = document.querySelectorAll("#projects > div");
+const projectsSection = document.getElementById('modal-sec');
+const blurProjects = document.querySelectorAll('#modal-sec > div');
 
 /* add the reset menu function */
 
@@ -49,10 +49,13 @@ const projects = [
   //   live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
   //   source_link: 'https://github.com/medsonmoombe/My-Portfolio',
   // },
-  { mobileImage:"./images/img-1.png",
+
+  {
+     mobileImage:"./images/img-1.png",
     id: "see-project-mobile",
     title: "Professional Art Printing Data",
-    image: "images/desk-1.png",
+    deskImg: "./images/placeholder1.png",
+    image: "./images/placeholder1.png",
     description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -74,7 +77,7 @@ const projects = [
   { mobileImage:"./images/img-1.png",
     id: "see-project-mobile",
     title: "Website Portfolio",
-    image: "images/desk-3.png",
+    image: "images/desk-4.png",
     description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -96,7 +99,7 @@ const projects = [
   { mobileImage:"./images/img-1.png",
     id: "see-project-mobile",
     title: "Data Dashboard Healthcare",
-    image: "images/desk-1.png",
+    image: "images/placeholder1.png",
     description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -119,116 +122,117 @@ const projects = [
 
 /*Creat popup div function*/
 
-function createDiv(see_project_btn_id) {
-  const div = document.createElement("div");
-  const liveBtn = document.createElement("a");
-  const sourceBtn = document.createElement("a");
-  const exitBtn = document.createElement("button");
-  const projectsTitle = document.createElement("h3");
-  const projectsLanguages = document.createElement("div");
-  const images = document.createElement("img");
-  const paragraph = document.createElement("p");
-  projectsTitle.innerText = `${projects[see_project_btn_id].title}`;
-  projectsTitle.classList.toggle("popup-title");
-  projectsLanguages.innerHTML = `<div>${projects[see_project_btn_id].technologies[0]}</div>
-  <div>${projects[see_project_btn_id].technologies[1]}</div>
-  <div>${projects[see_project_btn_id].technologies[2]}</div>`;
-  projectsLanguages.classList.toggle("popup-languages");
-  images.src = `${projects[see_project_btn_id].image}`;
-  images.classList.toggle("popup-img");
-  paragraph.innerText = `${projects[see_project_btn_id].description}`;
-  paragraph.classList.toggle("popup-paragraph");
+function createDiv(buttonClass) {
+let section = document.createElement("section");
+section.setAttribute("class", "modal");
+projectsSection.appendChild(section);
+let topContent = document.createElement("div");
+topContent.setAttribute("class", "top-content");
+let modalHeader =document.createElement("h1");
+modalHeader.innerText = `${projects[buttonClass].title}`;
+modalHeader.setAttribute("class", "modal-heading");
+let closeModalBtn =document.createElement("button");
+closeModalBtn.setAttribute("id", "modal-btn");
+closeModalBtn.innerText = "x";
+topContent.appendChild(modalHeader);
+topContent.appendChild(closeModalBtn);
 
-  liveBtn.textContent = "See Live";
-  liveBtn.href = `${projects[see_project_btn_id].live_link}`;
-  sourceBtn.textContent = "See Source";
-  sourceBtn.href = `${projects[see_project_btn_id].source_link}`;
-  liveBtn.classList.add("popup-btn", "live");
-  sourceBtn.classList.add("popup-btn", "popup-margin", "source");
-  exitBtn.style.backgroundImage = "URL('icons/Icon.png')";
-  exitBtn.style.backgroundRepeat = "no-repeat";
-  exitBtn.style.backgroundSize = "cover";
-  exitBtn.classList.add("popup-exit");
-  div.classList.toggle("popup");
 
-  if (window.innerWidth < 768) {
-    div.classList.toggle("mobile-width");
-    projectsTitle.classList.toggle("mobile-title");
-    projectsLanguages.classList.toggle("mobile-languages");
-    images.classList.toggle("popup-mobile-img");
-    paragraph.classList.toggle("popup-mobile-p");
-    sourceBtn.classList.toggle("mobile-btn");
-    liveBtn.classList.toggle("mobile-btn");
-  }
-  div.appendChild(projectsTitle);
-  div.appendChild(projectsLanguages);
-  div.appendChild(images);
-  div.appendChild(paragraph);
-  div.appendChild(liveBtn);
-  div.appendChild(sourceBtn);
-  div.appendChild(projectExitBtn);
-  projectsSection.appendChild(div);
-  console.log(projectsSection)
 
-  exitBtn.addEventListener("click", () => {
-    div.remove();
+/*ul section */
+let modalList = document.createElement("ul");
+modalList.setAttribute("class", "modal-list");
+
+let modalListItems = document.createElement("li");
+modalList.innerHTML = `<li class="modal-list1">${projects[0].technologies[0]}</li>
+<li class="modal-list1">${projects[1].technologies[1]}</li>
+<li class="modal-list1">${projects[2].technologies[2]}</li>`;
+modalList.appendChild(modalListItems);
+
+// /*modal content*/
+
+let modalContent =document.createElement("div");
+modalContent.setAttribute("class","modal-content");
+let modalImg=document.createElement("img");
+// modalImg.src = `${projects[buttonClass].image}`;
+modalImg.setAttribute("class", "modal-img");
+modalImg.src = `${projects[buttonClass].image}`;
+modalContent.appendChild(modalImg);
+let modalText =document.createElement("div");
+modalContent.appendChild(modalText);
+
+
+modalText.setAttribute("class", "modal-text");
+let modalPrg =document.createElement("p");
+modalText.appendChild(modalPrg);
+modalPrg.setAttribute("class","modal-paragraph");
+modalPrg.innerText = `${projects[buttonClass].description}`;
+let followBtnDiv =document.createElement("div");
+followBtnDiv.setAttribute("class", "follow-btn");
+modalText.appendChild(followBtnDiv);
+
+
+let followBtn =document.createElement("button");
+followBtn.setAttribute("class", "md-btn");
+followBtn.setAttribute("id", "see-live-btn");
+followBtn.textContent = 'See Live';
+followBtnDiv.appendChild(followBtn);
+ let followBtn2 = document.createElement("button");
+ followBtn2.setAttribute("class", "md-btn");
+ followBtn2.setAttribute("id", "see-source-btn");
+ followBtn2.textContent = 'See source';
+ followBtnDiv.appendChild(followBtn2);
+
+ 
+//  if (window.innerWidth < 768) {
+//   div.classList.toggle('mobile-width');
+//   projectsTitle.classList.toggle('mobile-title');
+//   projectsLanguages.classList.toggle('mobile-languages');
+//   images.classList.toggle('popup-mobile-img');
+//   paragraph.classList.toggle('popup-mobile-p');
+//   sourceBtn.classList.toggle('mobile-btn');
+//   liveSiteBtn.classList.toggle('mobile-btn');
+// }
+
+
+
+section.appendChild(topContent);
+section.appendChild(modalContent);
+section.appendChild(modalList);
+
+ closeModalBtn.addEventListener("click", () => {
+    section.remove();
     document.body.classList.toggle("no-scroll");
     document.body.style.background = "#fff";
-    blur.forEach((project) => project.classList.toggle("blur"));
+    blurProjects.forEach((project) => project.classList.toggle("blur"));
   });
+
 }
 
+
 /*mini-project section*/
+const grid =document.getElementById("cardSection");
+  const mobile = document.createElement('div');
+  const mobileVersion =document.createElement('div');
+  mobileVersion.setAttribute('class', 'mob-card1');
+  grid.appendChild(mobileVersion);
 
-const grid = document.getElementById("cardSection");
-let desktopVersion = document.createElement('div');
-const mobileVersion = document.createElement('div');
-grid.appendChild(desktopVersion);
-grid.appendChild(mobileVersion);
-function createProjectsContainer() {
-  projects.forEach((project, index) => {
-    desktopVersion = `
-        <div class="desktop-card">
-        <img
-        src= ${project.image}
-        alt="project"
-        data-img="image" class="desk-img"
-      />
-      <h6 class="Profesional">${project.title}</h6>
-      <p class="card-prg">
-        ${project.description1}
-      </p>
 
-      <ul class="tech-list2">
-        <li class="card-lst2">html</li>
-        <li class="card-lst3">bootstrap</li>
-        <li class="card-lst4">Ruby</li>
-      </ul>
 
-      <button type="button" id="${index}" class="btn-2">See Project</button>
-      </div>
-      </div>`;
-      
-        
-        // grid += desktopVersion.innerHTML;
-        // console.log(desktopVersion);
-
-  });
-    
+    console.log(grid)
      if(window.innerWidth < 768) {
-    projects.forEach((project1, index) => {
-      mobileVersion.innerHTML = `
+     for(let i =0; i < projects.length; i++) {
+      mobile.innerHTML = `
       <div class="card-1">
           <img
-          src= ${project1.mobileImage}
+          src= ${projects[i].mobileImage}
           alt="project"
           data-img="image" class="mobile-img"
         />
     
           <h6 class="Profesional">Profesional Art Printing Data</h6>
             <p class="card-prg">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
+              ${projects[i].description1}
             </p>
 
         <ul class="tech-list2">
@@ -236,16 +240,27 @@ function createProjectsContainer() {
           <li class="card-lst3">bootstrap</li>
           <li class="card-lst4">Ruby</li>
         </ul>
-    <button type="button" class="btn-2" id="${index}">See Project</button>
+    <button type="button" class="btn-2 proj-btn">See Project</button>
   </div>`;
-       mobileVersion.innerHTML += mobileVersion.innerHTML;
-    });
+      mobileVersion.innerHTML +=mobile.innerHTML;
+    };
   }
 
 
-}
-createProjectsContainer();
+
   
 const workSectionDiv = document.getElementById("desktop-card");
 const workSectionDiv1 = document.getElementById("cardOne");
+
+const buttons = [...document.querySelectorAll('.proj-btn')];
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', () => {
+    createDiv(i);
+    document.body.style.background = 'black';
+    document.body.classList.toggle('no-scroll');
+    blurProjects.forEach((project) => project.classList.toggle('blur'));
+  });
+}
+
 

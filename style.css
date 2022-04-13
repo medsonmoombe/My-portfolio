@@ -297,6 +297,14 @@ ul.tech-list {
   line-height: 24px;
 }
 
+.no-scrow {
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(20px);
+}
+
 .modal {
   display: flex;
   flex-direction: column;
@@ -400,39 +408,50 @@ ul.tech-list {
 
 .mobile-img {
   position: absolute;
+  margin-left: -2px;
+  width: 330px;
+}
+
+.mob-card1 {
+  margin-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .card-1 {
   background-repeat: no-repeat;
-  margin: 24px;
+  margin-left: 27px;
   height: 386px;
   margin-bottom: 24px;
 }
 
 .Profesional {
-  width: 295px;
-  height: 81px;
-  padding-left: 16px;
-  padding-top: 81px;
+  margin-top: 80px;
+  margin: top;
   font-family: "Crete Round", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 37px;
   line-height: 44px;
   color: #fff;
   position: absolute;
+  width: 290px;
+  margin-left: 9px;
 }
 
 .card-prg {
-  width: 295px;
+  width: 279px;
   height: 87px;
-  padding-left: 16px;
-  padding-top: 178px;
+  padding-left: 10px;
+  padding-top: 202px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   position: absolute;
+  margin-left: 2px;
+  margin-top: -17px;
 }
 
 .tech-list2 {
@@ -931,21 +950,6 @@ button {
    margin-left: 25px;
   }
 
-  /* .modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    position: fixed;
-    width: 343px;
-    height: 718px;
-    left: calc(50% - 343px / 2);
-    top: 60px;
-    background: #ffffff;
-    border: 1px solid #dfe1e6;
-    box-sizing: border-box;
-  } */
-
   .top-content {
     display: flex;
     justify-content: space-between;
@@ -1067,17 +1071,6 @@ button {
     height: 435px;
   }
 
-  .desk-cards {
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: 330px;
-    width: inherit;
-    height: 399px;
-    max-width: 90%;
-    border: 1px solid #333;
-    padding-left: 50px;
-  }
-
   .tech-list2 {
     display: flex;
     flex-flow: row wrap;
@@ -1146,15 +1139,6 @@ button {
     max-width: 90%;
   }
 
-  .Profesional {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: #fff;
-    margin: 179px 10px;
-    position: absolute;
-  }
 
   .card-prg {
     font-family: "Inter", sans-serif;
