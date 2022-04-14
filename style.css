@@ -751,8 +751,9 @@ input:focus:invalid {
   }
 
   #orange-p {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 27px;
+    font-size: 19px;
+    width: 401px;
   }
 
   .language-container {
@@ -767,7 +768,7 @@ input:focus:invalid {
   }
 
   .mini-projects {
-    height: 700px;
+    height: 611px;
     width: 100%;
   }
 
