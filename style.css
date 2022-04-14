@@ -212,7 +212,6 @@ div#headline-icons > ul {
 
 .popup-paragraph {
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
   line-height: 2;
   display: block;
   float: right;
@@ -830,7 +829,7 @@ input:focus:invalid {
     display: none;
   }
 
-   div#about-me-description {
+  div#about-me-description {
     background-image: none;
   }
 
@@ -916,7 +915,7 @@ input:focus:invalid {
 
 /* Media query for bigger mobiles 420px-600px */
 
- @media (min-width: 420px) and (max-width: 600px) {
+@media (min-width: 420px) and (max-width: 600px) {
   div#greeting {
     width: 22rem;
   }
@@ -949,11 +948,11 @@ input:focus:invalid {
   #about-me-description {
     padding: 0 2.5rem;
   }
-} 
+}
 
 /* Media query for tablets */
 
- @media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 600px) and (max-width: 992px) {
   nav {
     margin: 0 4rem;
   }
@@ -1030,4 +1029,4 @@ input:focus:invalid {
   .mini-languages-container {
     gap: 0.5rem;
   }
-} 
+}

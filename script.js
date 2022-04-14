@@ -233,37 +233,3 @@ for (let i = 0; i < buttons.length; i += 1) {
   });
 }
 
-/* Form validation */
-
-const form = document.getElementById('contact-form');
-const email = document.getElementById('email');
-const lowerCaseRegex = /[A-Z]/;
-
-form.addEventListener('submit', (e) => {
-  if (lowerCaseRegex.test(email.value.trim())) {
-    e.preventDefault();
-    const errorMessage = document.querySelector('small');
-    errorMessage.classList.remove('hidden');
-  }
-});
-
-/* Local storage */
-
-const myStorage = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-form.addEventListener('change', () => {
-  myStorage.name = document.getElementById('fullname').value;
-  myStorage.email = document.getElementById('email').value;
-  myStorage.message = document.getElementById('comments').value;
-  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
-});
-
-const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
-
-document.getElementById('fullname').value = storageObject.name;
-document.getElementById('email').value = storageObject.email;
-document.getElementById('comments').value = storageObject.message;
