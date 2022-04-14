@@ -786,21 +786,21 @@ input:focus:invalid {
 
   #mini-project1,
   #mini-project4 {
-    background-image: url("images/img-1.png");
+    background-image: url("images/ImgPlaceholder1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   #mini-project2,
   #mini-project5 {
-    background-image: url("images/desk-3.png");
+    background-image: url("images/ImgPlaceholder2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   #mini-project3,
   #mini-project6 {
-    background-image: url("images/desk-4.png");
+    background-image: url("images/ImgPlaceholder3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
