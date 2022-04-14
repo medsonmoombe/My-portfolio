@@ -1,285 +1,184 @@
-// pop-up menu mobile
-const humburger = document.querySelector(".fa-bars");
-const logo = document.querySelector(".logo");
-const nav = document.querySelector("nav");
-const closeBtn = document.querySelector(".close-btn");
-const menuItems = document.querySelectorAll(".menu-item");
-const menuMobile = document.querySelector(".menu-mobile");
-const projectsSection = document.getElementById('modal-sec');
-const blurProjects = document.querySelectorAll('#modal-sec > div');
-const grid = document.getElementById('cardSection');
 
-/* add the reset menu function */
-
-function resetMobileMenu() {
-  menuItems.forEach((item) => item.classList.remove("show"));
-  nav.classList.remove("expand");
-  logo.classList.remove("hidden");
-  menuMobile.classList.remove("ul-list");
-  humburger.style.display = "block";
-  closeBtn.classList.remove(".close-btn");
-}
-
-/* Add event listner to humbergur button */
-
-humburger.addEventListener("click", () => {
-  menuItems.forEach((item) => item.classList.add("show"));
-  nav.classList.add("expand");
-  logo.classList.add("hidden");
-  menuMobile.classList.add("ul-list");
-  humburger.style.display = "none";
-  closeBtn.classList.add("close-btn");
-
-  menuItems.forEach((item) => item.addEventListener("click", resetMobileMenu));
-});
-
-/* Add th event listner to the close button */
-
-closeBtn.addEventListener("click", resetMobileMenu);
-
-/* project card section*/
+/* Project section */
 
 const projects = [
-  // {
-  //   id: 'see-project-btn',
-  //   title: 'Multi-Post Stories',
-  //   image: 'images/placeholder1.png',
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-  //   technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-  //   live_link: 'https://medsonmoombe.github.io/My-Portfolio/',
-  //   source_link: 'https://github.com/medsonmoombe/My-Portfolio',
-  // },
-
   {
-     mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Professional Art Printing Data",
-    deskImg: "./images/placeholder1.png",
-    image: "./images/desk-1.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+    id: 'main-project-button',
+    title: 'Multi-Post Stories',
+    image: 'images/ImgPlaceholder.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
-  { mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Data Dashboard Healthcare",
-    image: "images/desk-3.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+  {
+    id: 'mini-project-btn1',
+    title: 'Professional Art Printing Data',
+    image: 'images/ImgPlaceholder1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
-  { mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Website Portfolio",
-    image: "images/desk-4.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+  {
+    id: 'mini-project-btn2',
+    title: 'Data Dashboard Healthcare',
+    image: 'images/ImgPlaceholder2.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
-  { mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Professional Art Printing Data",
-    image: "images/desk-4.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+  {
+    id: 'mini-project-btn3',
+    title: 'Website Portfolio',
+    image: 'images/ImgPlaceholder3.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
-  { mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Data Dashboard Healthcare",
-    image: "images/desk-1.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+  {
+    id: 'mini-project-btn4',
+    title: 'Professional Art Printing Data',
+    image: 'images/ImgPlaceholder1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
-  { mobileImage:"./images/img-1.png",
-    id: "see-project-mobile",
-    title: "Website Portfolio",
-    image: "./images/desk-3.png",
-    description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
+  {
+    id: 'mini-project-btn5',
+    title: 'Data Dashboard Healthcare',
+    image: 'images/ImgPlaceholder2.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ["html", "bootstrap", "Ruby"],
-    live_link: "https://medsonmoombe.github.io/My-Portfolio/",
-    source_link: "https://github.com/medsonmoombe/My-Portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+  },
+  {
+    id: 'mini-project-btn6',
+    title: 'Website Portfolio',
+    image: 'images/ImgPlaceholder3.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
   },
 ];
 
-/*Creat popup div function*/
+function createDiv(buttonId) {
+  const div = document.createElement('div');
+  const liveSiteBtn = document.createElement('a');
+  const sourceBtn = document.createElement('a');
+  const projectExitBtn = document.createElement('button');
+  const projectsTitle = document.createElement('h3');
+  const projectsLanguages = document.createElement('div');
+  const images = document.createElement('img');
+  const paragraph = document.createElement('p');
+  projectsTitle.innerText = `${projects[buttonId].title}`;
+  projectsTitle.classList.toggle('popup-title');
+  projectsLanguages.innerHTML = `<div>${projects[buttonId].technologies[0]}</div>
+  <div>${projects[buttonId].technologies[1]}</div>
+  <div>${projects[buttonId].technologies[2]}</div>`;
+  projectsLanguages.classList.toggle('popup-languages');
+  images.classList.toggle('popup-img');
+  paragraph.innerText = `${projects[buttonId].description}`;
+  paragraph.classList.toggle('popup-paragraph');
 
-function createDiv(buttonClass) {
-let section = document.createElement("section");
-section.setAttribute("class", "modal");
-projectsSection.appendChild(section);
-let topContent = document.createElement("div");
-topContent.setAttribute("class", "top-content");
-let modalHeader =document.createElement("h1");
-modalHeader.innerText = `${projects[buttonClass].title}`;
-modalHeader.setAttribute("class", "modal-heading");
-let closeModalBtn =document.createElement("button");
-closeModalBtn.setAttribute("id", "modal-btn");
-closeModalBtn.innerText = "x";
-topContent.appendChild(modalHeader);
-topContent.appendChild(closeModalBtn);
+  liveSiteBtn.textContent = 'See Live';
+  liveSiteBtn.href = `${projects[buttonId].live_link}`;
+  sourceBtn.textContent = 'See Source';
+  sourceBtn.href = `${projects[buttonId].source_link}`;
+  liveSiteBtn.classList.add('popup-btn', 'live');
+  sourceBtn.classList.add('popup-btn', 'popup-margin', 'source');
+  projectExitBtn.style.backgroundImage = "URL('icons/Icon.png')";
+  projectExitBtn.style.backgroundRepeat = 'no-repeat';
+  projectExitBtn.style.backgroundSize = 'cover';
+  projectExitBtn.classList.add('popup-exit');
+  div.classList.toggle('popup');
 
+  if (window.innerWidth < 900) {
+    div.classList.toggle('mobile-width');
+    projectsTitle.classList.toggle('mobile-title');
+    projectsLanguages.classList.toggle('mobile-languages');
+    images.classList.toggle('popup-mobile-img');
+    paragraph.classList.toggle('popup-mobile-p');
+    sourceBtn.classList.toggle('mobile-btn');
+    liveSiteBtn.classList.toggle('mobile-btn');
+  }
 
+  div.appendChild(projectsTitle);
+  div.appendChild(projectsLanguages);
+  div.appendChild(images);
+  div.appendChild(paragraph);
+  div.appendChild(liveSiteBtn);
+  div.appendChild(sourceBtn);
+  div.appendChild(projectExitBtn);
+  projectsSection.appendChild(div);
 
-/*ul section */
-let modalList = document.createElement("ul");
-modalList.setAttribute("class", "modal-list");
-
-let modalListItems = document.createElement("li");
-modalList.innerHTML = `<li class="modal-list1">${projects[0].technologies[0]}</li>
-<li class="modal-list1">${projects[1].technologies[1]}</li>
-<li class="modal-list1">${projects[2].technologies[2]}</li>`;
-modalList.appendChild(modalListItems);
-
-// /*modal content*/
-
-let modalContent =document.createElement("div");
-modalContent.setAttribute("class","modal-content");
-let modalImg=document.createElement("img");
-// modalImg.src = `${projects[buttonClass].image}`;
-modalImg.setAttribute("class", "modal-img");
-modalImg.src = `${projects[buttonClass].image}`;
-modalContent.appendChild(modalImg);
-let modalText =document.createElement("div");
-modalContent.appendChild(modalText);
-
-
-modalText.setAttribute("class", "modal-text");
-let modalPrg =document.createElement("p");
-modalText.appendChild(modalPrg);
-modalPrg.setAttribute("class","modal-paragraph");
-modalPrg.innerText = `${projects[buttonClass].description}`;
-let followBtnDiv =document.createElement("div");
-followBtnDiv.setAttribute("class", "follow-btn");
-modalText.appendChild(followBtnDiv);
-
-
-let followBtn =document.createElement("button");
-followBtn.setAttribute("class", "md-btn");
-followBtn.setAttribute("id", "see-live-btn");
-followBtn.textContent = 'See Live';
-followBtnDiv.appendChild(followBtn);
- let followBtn2 = document.createElement("button");
- followBtn2.setAttribute("class", "md-btn");
- followBtn2.setAttribute("id", "see-source-btn");
- followBtn2.textContent = 'See source';
- followBtnDiv.appendChild(followBtn2);
-
- 
-//  if (window.innerWidth < 768) {
-//   div.classList.toggle('mobile-width');
-//   projectsTitle.classList.toggle('mobile-title');
-//   projectsLanguages.classList.toggle('mobile-languages');
-//   images.classList.toggle('popup-mobile-img');
-//   paragraph.classList.toggle('popup-mobile-p');
-//   sourceBtn.classList.toggle('mobile-btn');
-//   liveSiteBtn.classList.toggle('mobile-btn');
-// }
-
-
-
-section.appendChild(topContent);
-section.appendChild(modalContent);
-section.appendChild(modalList);
-
- closeModalBtn.addEventListener("click", () => {
-    section.remove();
-    document.body.classList.toggle("no-scroll");
-    document.body.style.background = "#fff";
-    blurProjects.forEach((project) => project.classList.toggle("blur"));
+  projectExitBtn.addEventListener('click', () => {
+    div.remove();
+    document.body.classList.toggle('no-scroll');
+    document.body.style.background = '#fff';
+    blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
-
 }
 
+const grid = document.getElementById('projects-grid');
+function createProjectsContainer() {
+  for (let i = 1; i < projects.length; i += 1) {
+    const projectContainer = document.createElement('div');
+    projectContainer.setAttribute('class', 'mini-projects');
+    projectContainer.setAttribute('id', `mini-project${i}`);
+    grid.appendChild(projectContainer);
+  }
+}
+createProjectsContainer();
 
-/*mini-project section*/
-  const deskSec = document.createElement('section');
-      deskSec.setAttribute('class', 'desk-cards');
-     
-      grid.appendChild(deskSec);
+const workSectionDiv = document.querySelectorAll('.mini-projects');
 
-
-  function createCards() {
-     if(window.innerWidth > 768) {
-     const deskDup =document.createElement('div');
-      for(let i =0; i < projects.length; i++) {
-          deskDup.innerHTML = `
-          <div class="desktop-card2">
-              <img
-              src= ${projects[i].image}
-              alt="project" class="mobile-img2"/>
-           <h6 class="Profesional-first">${projects[i].title}<br>Healthcare</h6>
-           <p class="card-prg">
-           ${projects[i].description1}
-           </p>
-    
-            <ul class="tech-list2">
-              <li class="card-lst2">html</li>
-              <li class="card-lst3">bootstrap</li>
-              <li class="card-lst4">Ruby</li>
-              <button class=" proj-btn btn-2">see project</button>
-            </ul>
-           
-        </div>`;
-      deskSec.innerHTML +=deskDup.innerHTML;
-      
-        };
-
-      
-  } else{
-    for(let i = 0; i < projects.length; i++) {
-     const mobile = document.createElement('div');
-     const mobileVersion =document.createElement('div');
-      mobileVersion.setAttribute('class', 'mob-card1');
-      grid.appendChild(mobileVersion);
-      mobile.innerHTML = `
-      <div class="card-1">
+let counter = 0;
+function createElements(project) {
+  project.innerHTML = `
           <img
-          src= ${projects[i].mobileImage}
-          alt="project" class="mobile-img" />
-    
-          <h6 class="Profesional">Profesional Art Printing Data</h6>
-            <p class="card-prg">
-              ${projects[i].description1}
-            </p>
+            src=${projects[counter].image}
+            alt="project"
+            class="hidden"
+            data-img="image"
+          />
+          <h3 class="mini-h3" data-title="title">
+          ${projects[counter].title}
+          </h3>
+          <p class="mini-p" data-p="paragraph">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <div class="mini-languages-container" data-language="language-list">
+            <div class="mini-box"><span>html</span></div>
+            <div class="mini-box"><span>bootstrap</span></div>
+            <div class="mini-box"><span>Ruby</span></div>
+          </div>
+          <button
+            type="button"
+            class="btn project-btn"
+            id="mini-project-btn${counter + 1}"
+          >
+            See Project
+          </button>`;
+  counter += 1;
+}
 
-        <ul class="tech-list2">
-          <li class="card-lst2">html</li>
-          <li class="card-lst3">bootstrap</li>
-          <li class="card-lst4">Ruby</li>
-        </ul>
-    <button type="button" class="btn-2 proj-btn">See Project</button>
-  </div>`;
-     mobileVersion.innerHTML +=mobile.innerHTML;
-    };
-     
-  }
-  
+workSectionDiv.forEach(createElements);
 
-  }
-
-createCards();  
-
-const buttons = [...document.querySelectorAll('.proj-btn')];
+const buttons = [...document.querySelectorAll('.project-btn')];
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
@@ -290,4 +189,37 @@ for (let i = 0; i < buttons.length; i += 1) {
   });
 }
 
+/* Form validation */
 
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const lowerCaseRegex = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegex.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('hidden');
+  }
+});
+
+/* Local storage */
+
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myStorage.name = document.getElementById('fullname').value;
+  myStorage.email = document.getElementById('email').value;
+  myStorage.message = document.getElementById('comments').value;
+  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('fullname').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('comments').value = storageObject.message;
