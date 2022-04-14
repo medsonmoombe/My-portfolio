@@ -48,12 +48,12 @@ const projects = [
   {
     id: 'main-project-button',
     title: 'Multi-Post Stories',
-    image: 'images/Placeholder1.png',
+    image: 'images/ImgPlaceholder.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn1',
@@ -62,8 +62,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn2',
@@ -72,8 +72,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn3',
@@ -82,8 +82,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn4',
@@ -92,8 +92,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn5',
@@ -102,8 +102,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
     id: 'mini-project-btn6',
@@ -112,8 +112,8 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://virag-ky.github.io/Microverse-Portfolio/',
-    source_link: 'https://github.com/virag-ky/Microverse-Portfolio',
+    live_link: 'https://medsonmoombe.github.io/Microverse-Portfolio/',
+    source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
 ];
 
@@ -232,37 +232,3 @@ for (let i = 0; i < buttons.length; i += 1) {
   });
 }
 
-/* Form validation */
-
-const form = document.getElementById('contact-form');
-const email = document.getElementById('email');
-const lowerCaseRegex = /[A-Z]/;
-
-form.addEventListener('submit', (e) => {
-  if (lowerCaseRegex.test(email.value.trim())) {
-    e.preventDefault();
-    const errorMessage = document.querySelector('small');
-    errorMessage.classList.remove('hidden');
-  }
-});
-
-/* Local storage */
-
-const myStorage = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-form.addEventListener('change', () => {
-  myStorage.name = document.getElementById('fullname').value;
-  myStorage.email = document.getElementById('email').value;
-  myStorage.message = document.getElementById('comments').value;
-  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
-});
-
-const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
-
-document.getElementById('fullname').value = storageObject.name;
-document.getElementById('email').value = storageObject.email;
-document.getElementById('comments').value = storageObject.message;
