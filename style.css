@@ -138,3 +138,143 @@ section#headline {
   font-size: 3.5rem;
   padding-top: 5rem;
 }
+
+h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.description-p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+/* Headline icons */
+
+div#headline-icons > ul {
+  color: #dbd8d7;
+  padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.right {
+  margin-right: 0.6rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/* Projects section */
+
+.popup {
+  width: 85vw;
+  height: 92vh;
+  padding: 1.8rem 1.2rem 1rem 1.2rem;
+  background-color: #f3f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blur {
+  filter: blur(20px);
+}
+
+.popup-title {
+  color: black;
+  display: inline;
+  word-spacing: 0.6rem;
+  font-size: 3rem;
+}
+
+.popup-languages {
+  margin: 1rem 0 1.3rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.popup-languages > div {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 0.6rem 0.8rem;
+  color: black;
+  border: 1px solid rgb(143, 142, 142);
+}
+
+.popup-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  display: block;
+  float: right;
+  width: 38%;
+  margin-left: 1rem;
+}
+
+.popup-btn {
+  position: absolute;
+  top: 85%;
+  left: 62%;
+  display: flex;
+  gap: 0.5rem;
+  background-color: #fc6703;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+}
+
+.popup-btn:hover {
+  outline: thin solid #fc6703;
+  background-color: #fff5e1;
+  cursor: pointer;
+  color: #fc6703;
+}
+
+.live {
+  padding: 0.75rem 1rem;
+}
+
+.live::after {
+  content: url(icons/Iconlive.svg);
+}
+
+.source::after {
+  content: url(icons/Github.png);
+}
+
+.popup-margin {
+  margin-left: 9rem;
+}
+
+.popup-exit {
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  background-color: #f3f1f1;
+}
+
+.popup-exit:hover {
+  background-color: #f3f1f1;
+}
+
+.popup-img {
+  display: block;
+  float: left;
+  width: 60%;
+  height: 75%;
+  object-fit: cover;
+  object-position: 0% 20%;
+  border: thin solid rgb(196, 195, 195);
+}
