@@ -232,4 +232,3 @@ for (let i = 0; i < buttons.length; i += 1) {
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }
-
