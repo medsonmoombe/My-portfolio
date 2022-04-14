@@ -412,8 +412,12 @@ ul.tech-list {
   width: 330px;
 }
 
+.desktop-card{
+ display: none;
+}
+
 .mob-card1 {
-  margin-bottom: 93px;
+  /* margin-bottom: 93px; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1073,22 +1077,25 @@ button {
 
   .tech-list2 {
     display: flex;
-    flex-flow: row wrap;
     margin-left: 16px;
-    margin-top: 289px;
+    margin-top: 447px;
     position: absolute;
     width: inherit;
   }
 
-  .desktop-card {
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: 330px;
-    width: inherit;
-    height: 399px;
-    max-width: 90%;
-    padding-left: 55px;
-  }
+  .desk-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto auto );
+    grid-template-rows: 421px 527px;
+    gap: 79px;
+    margin-left: 244px;
+}
+
+.mobile-img2 {
+  width: 340px;
+  height: 561px;
+}
 
   /* .b-2tn {
     width: 328px;
@@ -1108,23 +1115,22 @@ button {
   }
 
   .card-prg-1 {
-    width: 100%;
+    /* width: 100%;
     font-family: "Inter", sans-serif;
     font-size: 13px;
     line-height: 21px;
     color: #fff;
     margin: 75px -221px;
-    margin-top: auto;
+    margin-top: auto; */
   }
 
   .desktop-card2 {
-    display: flex;
     background-image: url("images/desk-3.png");
     background-repeat: no-repeat;
     background-size: 330px;
     width: inherit;
     height: 399px;
-    margin-left: 14px;
+    margin-left: -49px;
     max-width: 90%;
   }
 
@@ -1146,6 +1152,7 @@ button {
     line-height: 21px;
     color: #fff;
     position: absolute;
+    margin-top: -942px;
   }
 
   .desktop-card4 {
@@ -1238,10 +1245,10 @@ button {
   }
 
   .btn-2 {
-    width: 342px;
+    width: 322px;
     position: absolute;
-    margin-top: 354px;
-    margin-left: -25px;
+    margin-top: 56px;
+    margin-left: -17px;
     height: 58px;
     border: 0;
   }

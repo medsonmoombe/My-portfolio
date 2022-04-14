@@ -7,6 +7,7 @@ const menuItems = document.querySelectorAll(".menu-item");
 const menuMobile = document.querySelector(".menu-mobile");
 const projectsSection = document.getElementById('modal-sec');
 const blurProjects = document.querySelectorAll('#modal-sec > div');
+const grid = document.getElementById('cardSection');
 
 /* add the reset menu function */
 
@@ -55,7 +56,7 @@ const projects = [
     id: "see-project-mobile",
     title: "Professional Art Printing Data",
     deskImg: "./images/placeholder1.png",
-    image: "./images/placeholder1.png",
+    image: "./images/desk-1.png",
     description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -99,7 +100,7 @@ const projects = [
   { mobileImage:"./images/img-1.png",
     id: "see-project-mobile",
     title: "Data Dashboard Healthcare",
-    image: "images/placeholder1.png",
+    image: "images/desk-1.png",
     description1: "A daily selection of privately personalized reads no accounts or sign-ups required has been the industry's standard",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -211,24 +212,50 @@ section.appendChild(modalList);
 
 
 /*mini-project section*/
-const grid =document.getElementById("cardSection");
-  const mobile = document.createElement('div');
-  const mobileVersion =document.createElement('div');
-  mobileVersion.setAttribute('class', 'mob-card1');
-  grid.appendChild(mobileVersion);
+  const deskSec = document.createElement('section');
+      deskSec.setAttribute('class', 'desk-cards');
+     
+      grid.appendChild(deskSec);
 
 
+  function createCards() {
+     if(window.innerWidth > 768) {
+     const deskDup =document.createElement('div');
+      for(let i =0; i < projects.length; i++) {
+          deskDup.innerHTML = `
+          <div class="desktop-card2">
+              <img
+              src= ${projects[i].image}
+              alt="project" class="mobile-img2"/>
+           <h6 class="Profesional-first">${projects[i].title}<br>Healthcare</h6>
+           <p class="card-prg">
+           ${projects[i].description1}
+           </p>
+    
+            <ul class="tech-list2">
+              <li class="card-lst2">html</li>
+              <li class="card-lst3">bootstrap</li>
+              <li class="card-lst4">Ruby</li>
+              <button class=" proj-btn btn-2">see project</button>
+            </ul>
+           
+        </div>`;
+      deskSec.innerHTML +=deskDup.innerHTML;
+      
+        };
 
-    console.log(grid)
-     if(window.innerWidth < 768) {
-     for(let i =0; i < projects.length; i++) {
+      
+  } else{
+    for(let i = 0; i < projects.length; i++) {
+     const mobile = document.createElement('div');
+     const mobileVersion =document.createElement('div');
+      mobileVersion.setAttribute('class', 'mob-card1');
+      grid.appendChild(mobileVersion);
       mobile.innerHTML = `
       <div class="card-1">
           <img
           src= ${projects[i].mobileImage}
-          alt="project"
-          data-img="image" class="mobile-img"
-        />
+          alt="project" class="mobile-img" />
     
           <h6 class="Profesional">Profesional Art Printing Data</h6>
             <p class="card-prg">
@@ -242,15 +269,15 @@ const grid =document.getElementById("cardSection");
         </ul>
     <button type="button" class="btn-2 proj-btn">See Project</button>
   </div>`;
-      mobileVersion.innerHTML +=mobile.innerHTML;
+     mobileVersion.innerHTML +=mobile.innerHTML;
     };
+     
+  }
+  
+
   }
 
-
-
-  
-const workSectionDiv = document.getElementById("desktop-card");
-const workSectionDiv1 = document.getElementById("cardOne");
+createCards();  
 
 const buttons = [...document.querySelectorAll('.proj-btn')];
 
