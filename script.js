@@ -240,3 +240,8 @@ const lowerCaseRegex = /[A-Z]/;
 
 
 //local storage
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('fullname').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('comments').value = storageObject.message;
