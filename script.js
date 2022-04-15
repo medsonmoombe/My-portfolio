@@ -232,7 +232,7 @@ for (let i = 0; i < buttons.length; i += 1) {
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }
-//form validation
+// form validation
 
 const form = document.getElementById('contact-form');
 const email = document.getElementById('email');
