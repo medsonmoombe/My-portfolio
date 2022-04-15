@@ -239,3 +239,4 @@ const email = document.getElementById('email');
 const lowerCaseRegex = /[A-Z]/;
 
 
+//local storage
