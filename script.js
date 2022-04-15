@@ -238,4 +238,8 @@ const form = document.getElementById('contact-form');
 const email = document.getElementById('email');
 const lowerCaseRegex = /[A-Z]/;
 
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegex.test(email.value.trim())) {
+    
+
 
