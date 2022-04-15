@@ -232,3 +232,16 @@ for (let i = 0; i < buttons.length; i += 1) {
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }
+// form validation
+
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const lowerCaseRegex = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegex.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('hidden');
+  }
+});
