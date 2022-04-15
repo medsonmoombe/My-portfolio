@@ -240,6 +240,11 @@ const lowerCaseRegex = /[A-Z]/;
 
 form.addEventListener('submit', (e) => {
   if (lowerCaseRegex.test(email.value.trim())) {
-    
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('hidden');
+  }
+});
+
 
 
