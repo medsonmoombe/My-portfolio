@@ -792,7 +792,7 @@ input:focus:invalid {
 
   #mini-project2,
   #mini-project5 {
-    background-image: url("images/ImgPlaceholder2.png");
+    background-image: url("images/todo.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

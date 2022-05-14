@@ -68,12 +68,12 @@ const projects = [
   {
     id: 'mini-project-btn2',
     title: 'Data Dashboard Healthcare',
-    image: 'images/ImgPlaceholder2.png',
+    image: 'images/todo.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    live_link: 'https://medsonmoombe.github.io/My-portfolio/',
-    source_link: 'https://github.com/medsonmoombe/My-portfolio',
+    live_link: 'https://medsonmoombe.github.io/todo-list/dist/index.html',
+    source_link: 'https://github.com/medsonmoombe/todo-list',
   },
   {
     id: 'mini-project-btn3',
@@ -98,12 +98,12 @@ const projects = [
   {
     id: 'mini-project-btn5',
     title: 'Data Dashboard Healthcare',
-    image: 'images/ImgPlaceholder2.png',
+    image: 'images/todo.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
     live_link: 'https://medsonmoombe.github.io/My-portfolio/',
-    source_link: 'https://github.com/medsonmoombe/My-Portfolio',
+    source_link: 'https://medsonmoombe.github.io/todo-list/dist/index.html',
   },
   {
     id: 'mini-project-btn6',
