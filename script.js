@@ -87,7 +87,7 @@ const projects = [
   },
   {
     id: 'mini-project-btn4',
-    title: 'Professional Art Printing Data',
+    title: 'Leaderboard',
     image: 'images/ImgPlaceholder1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -107,7 +107,7 @@ const projects = [
   },
   {
     id: 'mini-project-btn6',
-    title: 'Website Portfolio',
+    title: 'Movie website',
     image: 'images/js-group-project.png',
     description:
       "This our javascript capstone group project we did at microverse , it is a movie website which fetches movies from TVmaze API and displays them, we also used the microverse involvement API for addin…",

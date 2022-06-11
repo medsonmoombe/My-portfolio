@@ -405,7 +405,7 @@ div.mini-projects p {
 }
 
 .mini-projects {
-  background-image: url("images/Img1.png");
+  background-image: url("images/calc.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 390px;
@@ -420,14 +420,14 @@ div.mini-projects p {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   padding: 0.6rem 0.7rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: orange;
 }
 
 /* Buttons */
 
 button,
 #submit {
-  background-color: #fc6703;
+  background-color: orange;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #fff;
@@ -617,6 +617,17 @@ input:focus:invalid {
     padding-bottom: 3rem;
   }
 
+  h3 {
+    width: 21rem;
+    color: orange;
+    font-size: 30px;
+    /* margin-top: 79px; */
+    font-weight: 700;
+    padding-top: -91px;
+    margin-top: 20;
+    height: 85px;
+  }
+
   div#greeting {
     width: 40rem;
     position: relative;
@@ -739,7 +750,7 @@ input:focus:invalid {
   }
 
   #orange-project {
-    width: unset;
+    width: 100%;
   }
 
   #orange-h3 {
@@ -773,6 +784,8 @@ input:focus:invalid {
     padding-right: 2rem;
     font-size: 1.2rem;
     line-height: 2rem;
+    color: lightcoral;
+    font-weight: 600;
   }
 
   .mini-project-button {
@@ -781,11 +794,14 @@ input:focus:invalid {
 
   h3 {
     width: 21rem;
+    color: orange;
+    font-size: 30px;
+    font-weight: 700;
   }
 
   #mini-project1,
   #mini-project4 {
-    background-image: url("images/ImgPlaceholder1.png");
+    background-image: url("images/lead.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -799,7 +815,7 @@ input:focus:invalid {
 
   #mini-project3,
   #mini-project6 {
-    background-image: url("images/ImgPlaceholder3.png");
+    background-image: url("images/awesome.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
