@@ -87,13 +87,13 @@ const projects = [
   },
   {
     id: 'mini-project-btn5',
-    title: '',
-    image: 'images/ImgPlaceholder1.png',
+    title: 'Covid Stats',
+    image: 'images/covid.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
-    technologies: ['html', 'CSS', 'JavaScript'],
-    live_link: 'https://medsonmoombe.github.io/My-portfolio/',
-    source_link: 'https://github.com/medsonmoombe/My-portfolio',
+    technologies: ['react', 'redux', 'JavaScript'],
+    live_link: 'https://62bb0e3e5ee5341abc51b517--jolly-douhua-57a5de.netlify.app/',
+    source_link: 'https://github.com/medsonmoombe/covid-19-stats',
   },
   {
     id: 'mini-project-btn6',
@@ -102,7 +102,7 @@ const projects = [
     description:
       "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.",
     technologies: ['CSS', 'JavaScript', 'React.js'],
-    live_link: 'https://medsonmoombe.github.io/math_magician/',
+    live_link: 'https://cozy-centaur-d16d95.netlify.app/',
     source_link: 'https://github.com/medsonmoombe/math_magician',
   },
   {
@@ -112,7 +112,7 @@ const projects = [
     description:
       "This our javascript capstone group project we did at microverse , it is a movie website which fetches movies from TVmaze API and displays them, we also used the microverse involvement API for addin…",
     technologies: ['html', 'Css', 'Javasript'],
-    live_link: 'https://yayner2002.github.io/js-group-project',
+    live_link: 'https://magical-rugelach-5decb5.netlify.app/',
     source_link: 'https://github.com/medsonmoombe/js-group-project',
   },
 ];
@@ -186,9 +186,7 @@ function createProjectsContainer() {
   }
 }
 createProjectsContainer();
-
 const workSectionDiv = document.querySelectorAll('.mini-projects');
-
 let counter = 1;
 function createElements(project) {
   project.innerHTML = `
@@ -206,9 +204,9 @@ function createElements(project) {
             sign-ups required. has been the industry's standard
           </p>
           <div class="mini-languages-container" data-language="language-list">
-            <div class="mini-box"><span>html</span></div>
-            <div class="mini-box"><span>bootstrap</span></div>
-            <div class="mini-box"><span>Ruby</span></div>
+            <div class="mini-box"><span>${(projects[counter].technologies[0])}</span></div>
+            <div class="mini-box"><span>${(projects[counter].technologies[1])}</span></div>
+            <div class="mini-box"><span>${(projects[counter].technologies[2])}</span></div>
           </div>
           <button
             type="button"
