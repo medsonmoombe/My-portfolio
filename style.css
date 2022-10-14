@@ -832,7 +832,10 @@ input:focus:invalid {
   }
 
   #mini-project4:hover {
-
+    background-image: url("images/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-in-out 1s;
   }
 
   #mini-project5:hover {
