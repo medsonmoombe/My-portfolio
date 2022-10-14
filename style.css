@@ -405,7 +405,7 @@ div.mini-projects p {
 }
 
 .mini-projects {
-  background-image: url("images/calc.png");
+  background-image: url("images/projectpic.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 390px;
@@ -413,6 +413,7 @@ div.mini-projects p {
   flex-direction: column;
   justify-content: flex-end;
   margin-top: 1.5rem;
+  transition: ease-in-out 1s;
 }
 
 .mini-box {
@@ -778,6 +779,16 @@ input:focus:invalid {
   .mini-projects {
     height: 611px;
     width: 100%;
+    border-radius: 20px;
+    /* background-image: url("images/projectpic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    transition: ease-in-out 1s; */
   }
 
   div.mini-projects p {
@@ -799,25 +810,40 @@ input:focus:invalid {
     font-weight: 700;
   }
 
-  #mini-project1,
-  #mini-project4 {
+  #mini-project1:hover {
     background-image: url("images/lead.png");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: ease-in-out 1s;
   }
 
-  #mini-project2,
-  #mini-project5 {
+  #mini-project2:hover {
     background-image: url("images/todo.png");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: ease-in-out 1s;
   }
 
-  #mini-project3,
-  #mini-project6 {
+  #mini-project3:hover {
     background-image: url("images/awesome.png");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: ease-in-out 1s;
+  }
+
+  #mini-project4:hover {
+
+  }
+
+  #mini-project5:hover {
+    background-image: url("images/awesome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-in-out 1s;
+  }
+
+  #mini-project6:hover {
+
   }
 
   .mini-projects:hover {
@@ -825,6 +851,7 @@ input:focus:invalid {
     border: 2px solid black;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: ease-in-out 1s;
   }
 
   .mini-projects:hover .mini-project-button {
@@ -833,6 +860,7 @@ input:focus:invalid {
 
   .mini-projects:hover .mini-h3 {
     display: none;
+    transition: ease-in-out 1s;
   }
 
   .mini-projects:hover .mini-p {

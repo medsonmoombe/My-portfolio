@@ -56,7 +56,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/First-capstone-project',
   },
   {
-    id: 'mini-project-btn1',
+    id: 'mini-project-btn2',
     title: 'Leaderboard',
     image: 'images/lead.png',
     description:
@@ -66,7 +66,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/leaderboad',
   },
   {
-    id: 'mini-project-btn2',
+    id: 'mini-project-btn3',
     title: 'Todo list',
     image: 'images/todo.png',
     description:
@@ -76,7 +76,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/todo-list',
   },
   {
-    id: 'mini-project-btn3',
+    id: 'mini-project-btn4',
     title: 'Awesome Books',
     image: 'images/awesome.png',
     description:
@@ -86,7 +86,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/awesome-books-ES6-solo',
   },
   {
-    id: 'mini-project-btn4',
+    id: 'mini-project-btn5',
     title: 'Leaderboard',
     image: 'images/ImgPlaceholder1.png',
     description:
@@ -96,7 +96,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/My-portfolio',
   },
   {
-    id: 'mini-project-btn5',
+    id: 'mini-project-btn6',
     title: 'Math magician',
     image: 'images/calc.png',
     description:
@@ -106,7 +106,7 @@ const projects = [
     source_link: 'https://github.com/medsonmoombe/math_magician',
   },
   {
-    id: 'mini-project-btn6',
+    id: 'mini-project-btn7',
     title: 'Movie website',
     image: 'images/js-group-project.png',
     description:
@@ -189,7 +189,7 @@ createProjectsContainer();
 
 const workSectionDiv = document.querySelectorAll('.mini-projects');
 
-let counter = 0;
+let counter = 1;
 function createElements(project) {
   project.innerHTML = `
           <img
